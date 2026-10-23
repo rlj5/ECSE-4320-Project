@@ -1,0 +1,3 @@
+dtype,gflops,seconds,chains
+f32,109.91,0.524,12
+f64,55.10,0.523,12

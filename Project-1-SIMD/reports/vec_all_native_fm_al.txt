@@ -1,0 +1,1585 @@
+src/bench.c:67:93: missed: statement clobbers memory: p_8 = aligned_alloc (4096, sz_5);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __builtin_fwrite ("alloc fail\n", 1, 11, stderr.18_11);
+src/bench.c:67:155: missed: statement clobbers memory: exit (2);
+src/bench.c:67:155: note: ***** Analysis failed with vector mode V4DI
+src/bench.c:67:155: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+src/bench.c:28:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:28:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:28:1: note: vectorized 1 loops in function.
+src/bench.c:28:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:28:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:28:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:28:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:28:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:28:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:28:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:28:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:29:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:29:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:29:1: note: vectorized 1 loops in function.
+src/bench.c:29:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:29:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:29:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:29:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:29:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:29:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:29:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:29:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:30:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:30:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:30:1: note: vectorized 1 loops in function.
+src/bench.c:30:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:30:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:30:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:30:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:30:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:30:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:30:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:30:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:31:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:31:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:31:1: note: vectorized 1 loops in function.
+src/bench.c:31:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:31:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:31:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:31:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:31:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:31:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:31:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:31:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:32:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:32:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:32:1: missed: couldn't vectorize loop
+src/bench.c:32:1: missed: not vectorized: no vectype for stmt: _4 = *_3;
+ scalar_type: const float
+src/bench.c:32:1: note: vectorized 1 loops in function.
+src/bench.c:32:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:32:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:32:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:32:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:32:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:32:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:32:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:32:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:33:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:33:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:33:1: note: vectorized 1 loops in function.
+src/bench.c:33:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:33:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:33:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:33:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:33:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:33:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:33:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:33:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:50:1: missed: statement clobbers memory: k_gather_f32 (1.00000011920928955078125e+0, x_5(D), y_6(D), idx_7(D), n_8(D));
+src/bench.c:50:1: missed: statement clobbers memory: k_stride_f32 (1.00000011920928955078125e+0, x_5(D), y_6(D), n_8(D), s_11(D));
+src/bench.c:50:1: missed: statement clobbers memory: k_stencil_f32 (2.5e-1, 5.0e-1, 2.5e-1, x_5(D), y_6(D), n_8(D));
+src/bench.c:50:1: missed: statement clobbers memory: _14 = k_dot_f32 (x_5(D), y_6(D), n_8(D));
+src/bench.c:50:1: missed: statement clobbers memory: k_mul_f32 (x_5(D), y_6(D), z_15(D), n_8(D));
+src/bench.c:50:1: missed: statement clobbers memory: k_saxpy_f32 (1.00000011920928955078125e+0, x_5(D), y_6(D), n_8(D));
+src/bench.c:50:1: note: ***** Analysis failed with vector mode VOID
+src/bench.c:34:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:34:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:34:1: note: vectorized 1 loops in function.
+src/bench.c:34:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:34:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:34:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:34:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:34:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:34:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:34:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:34:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:35:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:35:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:35:1: note: vectorized 1 loops in function.
+src/bench.c:35:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:35:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:35:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:35:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:35:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:35:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:35:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:35:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:36:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:36:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:36:1: note: vectorized 1 loops in function.
+src/bench.c:36:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:36:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:36:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:36:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:36:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:36:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:36:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:36:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:37:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:37:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:37:1: note: vectorized 1 loops in function.
+src/bench.c:37:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:37:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:37:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:37:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:37:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:37:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:37:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:37:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:38:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:38:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:38:1: missed: couldn't vectorize loop
+src/bench.c:38:1: missed: not vectorized: no vectype for stmt: _4 = *_3;
+ scalar_type: const double
+src/bench.c:38:1: note: vectorized 1 loops in function.
+src/bench.c:38:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:38:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:38:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:38:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:38:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:38:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:38:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:38:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:39:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:39:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:39:1: note: vectorized 1 loops in function.
+src/bench.c:39:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:39:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:39:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:39:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:39:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:39:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:39:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:39:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:51:1: missed: statement clobbers memory: k_gather_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_5(D), y_6(D), idx_7(D), n_8(D));
+src/bench.c:51:1: missed: statement clobbers memory: k_stride_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_5(D), y_6(D), n_8(D), s_11(D));
+src/bench.c:51:1: missed: statement clobbers memory: k_stencil_f64 (2.5e-1, 5.0e-1, 2.5e-1, x_5(D), y_6(D), n_8(D));
+src/bench.c:51:1: missed: statement clobbers memory: _14 = k_dot_f64 (x_5(D), y_6(D), n_8(D));
+src/bench.c:51:1: missed: statement clobbers memory: k_mul_f64 (x_5(D), y_6(D), z_15(D), n_8(D));
+src/bench.c:51:1: missed: statement clobbers memory: k_saxpy_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_5(D), y_6(D), n_8(D));
+src/bench.c:51:1: note: ***** Analysis failed with vector mode VOID
+src/bench.c:99:1: missed: couldn't vectorize loop
+src/bench.c:99:1: missed: not vectorized: control flow in loop.
+src/bench.c:99:1: missed: couldn't vectorize loop
+src/bench.c:99:1: missed: not vectorized: control flow in loop.
+src/bench.c:99:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:99:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:99:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:99:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:100:1: missed: not vectorized: control flow in loop.
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:100:1: missed: not vectorized: control flow in loop.
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:51:1: missed: statement clobbers memory: k_saxpy_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_295, y_296, N_34);
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:100:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:100:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:100:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:100:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:105:26: missed: couldn't vectorize loop
+src/bench.c:105:26: missed: not vectorized: control flow in loop.
+src/bench.c:102:5: note: vectorized 3 loops in function.
+src/bench.c:103:17: missed: statement clobbers memory: _2 = strcmp (_1, "--header");
+src/bench.c:105:38: missed: statement clobbers memory: _332 = strcmp (_1, "saxpy");
+src/bench.c:105:38: missed: statement clobbers memory: _250 = strcmp (_1, "mul");
+src/bench.c:105:38: missed: statement clobbers memory: _260 = strcmp (_1, "dot");
+src/bench.c:105:38: missed: statement clobbers memory: _268 = strcmp (_1, "stencil");
+src/bench.c:105:38: missed: statement clobbers memory: _987 = strcmp (_1, "stride");
+src/bench.c:105:38: missed: statement clobbers memory: _6 = strcmp (_1, "gather");
+src/bench.c:106:12: missed: statement clobbers memory: N_34 = strtoull (_8, 0B, 10);
+/usr/include/stdlib.h:483:16: missed: statement clobbers memory: _46 = strtol (_10, 0B, 10);
+src/bench.c:107:22: missed: statement clobbers memory: iftmp.2_36 = strtoull (_11, 0B, 10);
+src/bench.c:107:60: missed: statement clobbers memory: iftmp.3_38 = strtoull (_13, 0B, 10);
+src/bench.c:107:95: missed: statement clobbers memory: iftmp.4_40 = strtoull (_15, 0B, 10);
+src/bench.c:109:7: missed: statement clobbers memory: _19 = strcmp (_18, "f32");
+src/bench.c:110:7: missed: statement clobbers memory: _20 = strcmp (_18, "f64");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __builtin_fwrite ("bad dtype\n", 1, 10, stderr.6_21);
+src/bench.c:100:1: missed: statement clobbers memory: x1_421 = A (_420, iftmp.2_12);
+src/bench.c:100:1: missed: statement clobbers memory: y1_422 = A (_420, iftmp.3_9);
+src/bench.c:100:1: missed: statement clobbers memory: z1_423 = A (_420, 0);
+src/bench.c:100:1: missed: statement clobbers memory: x2_424 = A (_420, iftmp.2_12);
+src/bench.c:100:1: missed: statement clobbers memory: y2_425 = A (_420, iftmp.3_9);
+src/bench.c:100:1: missed: statement clobbers memory: z2_426 = A (_420, 0);
+src/bench.c:100:1: missed: statement clobbers memory: idx_429 = A (_428, 0);
+src/bench.c:100:1: missed: statement clobbers memory: d1_443 = run_f64 (k_22, x1_421, y1_422, z1_423, idx_429, n_416, iftmp.4_26);
+src/bench.c:100:1: missed: statement clobbers memory: ref_f64 (k_22, x2_424, y2_425, z2_426, idx_429, n_416, iftmp.4_26, &d2);
+src/bench.c:100:1: missed: statement clobbers memory: d1_473 = run_f64 (k_22, x1_421, y1_422, z1_423, idx_429, n_416, iftmp.4_26);
+src/bench.c:100:1: missed: statement clobbers memory: ref_f64 (k_22, x2_424, y2_425, z2_426, idx_429, n_416, iftmp.4_26, &d2);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (stderr.35_511, 2, "CHECK_OK %s %s n=%zu maxrel=%.3g\n", _510, "f64", n_416, mr_14);
+src/bench.c:100:1: missed: statement clobbers memory: x_295 = A (_294, iftmp.2_12);
+src/bench.c:100:1: missed: statement clobbers memory: y_296 = A (_294, iftmp.3_9);
+src/bench.c:100:1: missed: statement clobbers memory: z_297 = A (_294, 0);
+src/bench.c:100:1: missed: statement clobbers memory: idx_300 = A (_299, 0);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} 0.0;
+src/bench.c:100:1: missed: statement clobbers memory: r_351 = run_f64 (k_22, x_295, y_296, z_297, idx_300, N_34, iftmp.4_26);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.26_352 ={v} sink;
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} _353;
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:100:1: missed: statement clobbers memory: r_360 = run_f64 (k_22, x_295, y_296, z_297, idx_300, N_34, iftmp.4_26);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.27_361 ={v} sink;
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} _362;
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_381, "=d" hi_382);
+src/bench.c:51:1: missed: statement clobbers memory: k_saxpy_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_295, y_296, N_34);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.28_388 ={v} sink;
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} sink.28_388;
+src/bench.c:100:1: missed: statement clobbers memory: __asm__ __volatile__("" :  :  : "memory");
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_392, "=d" hi_393);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.29_404 ={v} sink;
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:86:10: missed: statement clobbers memory: __printf_chk (2, "%s,%s,%s,%zu,%zu,%zu,%zu,%d,%.6e,%.1f,%zu,%g\n", "native_fm_al", _412, "f64", N_34, iftmp.2_12, iftmp.3_9, iftmp.4_26, rep_670, _411, _409, _374, sink.29_404);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_1250, "=d" hi_1249);
+src/bench.c:51:1: missed: statement clobbers memory: k_stride_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_295, y_296, N_34, iftmp.4_26);
+src/bench.c:51:1: missed: statement clobbers memory: k_stencil_f64 (2.5e-1, 5.0e-1, 2.5e-1, x_295, y_296, N_34);
+src/bench.c:51:1: missed: statement clobbers memory: _1239 = k_dot_f64 (x_295, y_296, N_34);
+src/bench.c:51:1: missed: statement clobbers memory: k_mul_f64 (x_295, y_296, z_297, N_34);
+src/bench.c:51:1: missed: statement clobbers memory: k_gather_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_295, y_296, idx_300, N_34);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.28_1234 ={v} sink;
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} _1233;
+src/bench.c:100:1: missed: statement clobbers memory: __asm__ __volatile__("" :  :  : "memory");
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_1228, "=d" hi_1227);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.29_1214 ={v} sink;
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:86:10: missed: statement clobbers memory: __printf_chk (2, "%s,%s,%s,%zu,%zu,%zu,%zu,%d,%.6e,%.1f,%zu,%g\n", "native_fm_al", _1207, "f64", N_34, iftmp.2_12, iftmp.3_9, iftmp.4_26, rep_1259, _1208, _1211, _374, sink.29_1214);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (pretmp_1351, 2, "CHECK FAIL %s %s maxrel=%g tol=%g\n", pretmp_1352, "f64", mr_507, iftmp.33_506);
+src/bench.c:99:1: missed: statement clobbers memory: x1_189 = A (_188, iftmp.2_12);
+src/bench.c:99:1: missed: statement clobbers memory: y1_190 = A (_188, iftmp.3_9);
+src/bench.c:99:1: missed: statement clobbers memory: z1_191 = A (_188, 0);
+src/bench.c:99:1: missed: statement clobbers memory: x2_192 = A (_188, iftmp.2_12);
+src/bench.c:99:1: missed: statement clobbers memory: y2_193 = A (_188, iftmp.3_9);
+src/bench.c:99:1: missed: statement clobbers memory: z2_194 = A (_188, 0);
+src/bench.c:99:1: missed: statement clobbers memory: idx_197 = A (_196, 0);
+src/bench.c:99:1: missed: statement clobbers memory: d1_527 = run_f32 (k_22, x1_189, y1_190, z1_191, idx_197, n_184, iftmp.4_26);
+src/bench.c:99:1: missed: statement clobbers memory: ref_f32 (k_22, x2_192, y2_193, z2_194, idx_197, n_184, iftmp.4_26, &d2);
+src/bench.c:99:1: missed: statement clobbers memory: d1_243 = run_f32 (k_22, x1_189, y1_190, z1_191, idx_197, n_184, iftmp.4_26);
+src/bench.c:99:1: missed: statement clobbers memory: ref_f32 (k_22, x2_192, y2_193, z2_194, idx_197, n_184, iftmp.4_26, &d2);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (stderr.17_286, 2, "CHECK_OK %s %s n=%zu maxrel=%.3g\n", _285, "f32", n_184, mr_512);
+src/bench.c:99:1: missed: statement clobbers memory: x_58 = A (_57, iftmp.2_12);
+src/bench.c:99:1: missed: statement clobbers memory: y_59 = A (_57, iftmp.3_9);
+src/bench.c:99:1: missed: statement clobbers memory: z_60 = A (_57, 0);
+src/bench.c:99:1: missed: statement clobbers memory: idx_63 = A (_62, 0);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} 0.0;
+src/bench.c:99:1: missed: statement clobbers memory: _116 = run_f32 (k_22, x_58, y_59, z_60, idx_63, N_34, iftmp.4_26);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.8_118 ={v} sink;
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} _119;
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:99:1: missed: statement clobbers memory: _126 = run_f32 (k_22, x_58, y_59, z_60, idx_63, N_34, iftmp.4_26);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.9_128 ={v} sink;
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} _129;
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_148, "=d" hi_149);
+src/bench.c:50:1: missed: statement clobbers memory: k_saxpy_f32 (1.00000011920928955078125e+0, x_58, y_59, N_34);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.10_156 ={v} sink;
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} sink.10_156;
+src/bench.c:99:1: missed: statement clobbers memory: __asm__ __volatile__("" :  :  : "memory");
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_160, "=d" hi_161);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.11_172 ={v} sink;
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:86:10: missed: statement clobbers memory: __printf_chk (2, "%s,%s,%s,%zu,%zu,%zu,%zu,%d,%.6e,%.1f,%zu,%g\n", "native_fm_al", _180, "f32", N_34, iftmp.2_12, iftmp.3_9, iftmp.4_26, rep_181, _179, _177, _141, sink.11_172);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_1306, "=d" hi_1305);
+src/bench.c:50:1: missed: statement clobbers memory: k_stride_f32 (1.00000011920928955078125e+0, x_58, y_59, N_34, iftmp.4_26);
+src/bench.c:50:1: missed: statement clobbers memory: k_stencil_f32 (2.5e-1, 5.0e-1, 2.5e-1, x_58, y_59, N_34);
+src/bench.c:50:1: missed: statement clobbers memory: _1295 = k_dot_f32 (x_58, y_59, N_34);
+src/bench.c:50:1: missed: statement clobbers memory: k_mul_f32 (x_58, y_59, z_60, N_34);
+src/bench.c:50:1: missed: statement clobbers memory: k_gather_f32 (1.00000011920928955078125e+0, x_58, y_59, idx_63, N_34);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.10_1289 ={v} sink;
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} _1288;
+src/bench.c:99:1: missed: statement clobbers memory: __asm__ __volatile__("" :  :  : "memory");
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_1283, "=d" hi_1282);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.11_1269 ={v} sink;
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:86:10: missed: statement clobbers memory: __printf_chk (2, "%s,%s,%s,%zu,%zu,%zu,%zu,%d,%.6e,%.1f,%zu,%g\n", "native_fm_al", _1262, "f32", N_34, iftmp.2_12, iftmp.3_9, iftmp.4_26, rep_1315, _1263, _1266, _141, sink.11_1269);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (pretmp_1349, 2, "CHECK FAIL %s %s maxrel=%g tol=%g\n", pretmp_1350, "f32", mr_282, iftmp.15_281);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __builtin_fwrite ("N>=3\n", 1, 5, stderr.5_16);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __builtin_fwrite ("bad kernel\n", 1, 11, stderr.1_7);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (stderr.0_4, 2, "usage: %s kernel dtype N reps [offx offy stride]\n", _3);
+src/bench.c:103:46: missed: statement clobbers memory: puts ("variant,kernel,dtype,N,offx,offy,stride,rep,sec_per_call,tsc_per_call,iters,sink");
+src/bench.c:19:60: note: ***** Analysis failed with vector mode V4DI
+src/bench.c:19:60: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:19:60: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:19:60: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:19:60: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:19:60: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:19:60: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:19:60: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:67:93: missed: statement clobbers memory: p_8 = aligned_alloc (4096, sz_5);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __builtin_fwrite ("alloc fail\n", 1, 11, stderr.18_11);
+src/bench.c:67:155: missed: statement clobbers memory: exit (2);
+src/bench.c:67:155: note: ***** Analysis failed with vector mode V4DI
+src/bench.c:67:155: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+src/bench.c:28:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:28:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:28:1: note: vectorized 1 loops in function.
+src/bench.c:28:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:28:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:28:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:28:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:28:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:28:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:28:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:28:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:29:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:29:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:29:1: note: vectorized 1 loops in function.
+src/bench.c:29:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:29:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:29:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:29:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:29:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:29:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:29:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:29:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:30:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:30:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:30:1: note: vectorized 1 loops in function.
+src/bench.c:30:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:30:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:30:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:30:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:30:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:30:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:30:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:30:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:31:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:31:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:31:1: note: vectorized 1 loops in function.
+src/bench.c:31:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:31:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:31:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:31:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:31:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:31:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:31:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:31:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:32:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:32:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:32:1: missed: couldn't vectorize loop
+src/bench.c:32:1: missed: not vectorized: no vectype for stmt: _4 = *_3;
+ scalar_type: const float
+src/bench.c:32:1: note: vectorized 1 loops in function.
+src/bench.c:32:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:32:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:32:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:32:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:32:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:32:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:32:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:32:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:33:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:33:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:33:1: note: vectorized 1 loops in function.
+src/bench.c:33:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:33:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:33:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:33:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:33:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:33:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:33:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:33:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:50:1: missed: statement clobbers memory: k_gather_f32 (1.00000011920928955078125e+0, x_5(D), y_6(D), idx_7(D), n_8(D));
+src/bench.c:50:1: missed: statement clobbers memory: k_stride_f32 (1.00000011920928955078125e+0, x_5(D), y_6(D), n_8(D), s_11(D));
+src/bench.c:50:1: missed: statement clobbers memory: k_stencil_f32 (2.5e-1, 5.0e-1, 2.5e-1, x_5(D), y_6(D), n_8(D));
+src/bench.c:50:1: missed: statement clobbers memory: _14 = k_dot_f32 (x_5(D), y_6(D), n_8(D));
+src/bench.c:50:1: missed: statement clobbers memory: k_mul_f32 (x_5(D), y_6(D), z_15(D), n_8(D));
+src/bench.c:50:1: missed: statement clobbers memory: k_saxpy_f32 (1.00000011920928955078125e+0, x_5(D), y_6(D), n_8(D));
+src/bench.c:50:1: note: ***** Analysis failed with vector mode VOID
+src/bench.c:34:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:34:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:34:1: note: vectorized 1 loops in function.
+src/bench.c:34:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:34:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:34:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:34:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:34:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:34:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:34:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:34:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:35:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:35:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:35:1: note: vectorized 1 loops in function.
+src/bench.c:35:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:35:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:35:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:35:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:35:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:35:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:35:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:35:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:36:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:36:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:36:1: note: vectorized 1 loops in function.
+src/bench.c:36:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:36:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:36:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:36:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:36:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:36:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:36:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:36:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:37:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:37:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:37:1: note: vectorized 1 loops in function.
+src/bench.c:37:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:37:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:37:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:37:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:37:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:37:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:37:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:37:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:38:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:38:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:38:1: missed: couldn't vectorize loop
+src/bench.c:38:1: missed: not vectorized: no vectype for stmt: _4 = *_3;
+ scalar_type: const double
+src/bench.c:38:1: note: vectorized 1 loops in function.
+src/bench.c:38:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:38:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:38:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:38:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:38:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:38:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:38:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:38:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:39:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:39:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:39:1: note: vectorized 1 loops in function.
+src/bench.c:39:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:39:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:39:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:39:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:39:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:39:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:39:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:39:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:51:1: missed: statement clobbers memory: k_gather_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_5(D), y_6(D), idx_7(D), n_8(D));
+src/bench.c:51:1: missed: statement clobbers memory: k_stride_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_5(D), y_6(D), n_8(D), s_11(D));
+src/bench.c:51:1: missed: statement clobbers memory: k_stencil_f64 (2.5e-1, 5.0e-1, 2.5e-1, x_5(D), y_6(D), n_8(D));
+src/bench.c:51:1: missed: statement clobbers memory: _14 = k_dot_f64 (x_5(D), y_6(D), n_8(D));
+src/bench.c:51:1: missed: statement clobbers memory: k_mul_f64 (x_5(D), y_6(D), z_15(D), n_8(D));
+src/bench.c:51:1: missed: statement clobbers memory: k_saxpy_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_5(D), y_6(D), n_8(D));
+src/bench.c:51:1: note: ***** Analysis failed with vector mode VOID
+src/bench.c:99:1: missed: couldn't vectorize loop
+src/bench.c:99:1: missed: not vectorized: control flow in loop.
+src/bench.c:99:1: missed: couldn't vectorize loop
+src/bench.c:99:1: missed: not vectorized: control flow in loop.
+src/bench.c:99:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:99:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:99:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:99:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:100:1: missed: not vectorized: control flow in loop.
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:100:1: missed: not vectorized: control flow in loop.
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:51:1: missed: statement clobbers memory: k_saxpy_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_295, y_296, N_34);
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:100:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:100:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:100:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:100:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:105:26: missed: couldn't vectorize loop
+src/bench.c:105:26: missed: not vectorized: control flow in loop.
+src/bench.c:102:5: note: vectorized 3 loops in function.
+src/bench.c:103:17: missed: statement clobbers memory: _2 = strcmp (_1, "--header");
+src/bench.c:105:38: missed: statement clobbers memory: _332 = strcmp (_1, "saxpy");
+src/bench.c:105:38: missed: statement clobbers memory: _250 = strcmp (_1, "mul");
+src/bench.c:105:38: missed: statement clobbers memory: _260 = strcmp (_1, "dot");
+src/bench.c:105:38: missed: statement clobbers memory: _268 = strcmp (_1, "stencil");
+src/bench.c:105:38: missed: statement clobbers memory: _987 = strcmp (_1, "stride");
+src/bench.c:105:38: missed: statement clobbers memory: _6 = strcmp (_1, "gather");
+src/bench.c:106:12: missed: statement clobbers memory: N_34 = strtoull (_8, 0B, 10);
+/usr/include/stdlib.h:483:16: missed: statement clobbers memory: _46 = strtol (_10, 0B, 10);
+src/bench.c:107:22: missed: statement clobbers memory: iftmp.2_36 = strtoull (_11, 0B, 10);
+src/bench.c:107:60: missed: statement clobbers memory: iftmp.3_38 = strtoull (_13, 0B, 10);
+src/bench.c:107:95: missed: statement clobbers memory: iftmp.4_40 = strtoull (_15, 0B, 10);
+src/bench.c:109:7: missed: statement clobbers memory: _19 = strcmp (_18, "f32");
+src/bench.c:110:7: missed: statement clobbers memory: _20 = strcmp (_18, "f64");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __builtin_fwrite ("bad dtype\n", 1, 10, stderr.6_21);
+src/bench.c:100:1: missed: statement clobbers memory: x1_421 = A (_420, iftmp.2_12);
+src/bench.c:100:1: missed: statement clobbers memory: y1_422 = A (_420, iftmp.3_9);
+src/bench.c:100:1: missed: statement clobbers memory: z1_423 = A (_420, 0);
+src/bench.c:100:1: missed: statement clobbers memory: x2_424 = A (_420, iftmp.2_12);
+src/bench.c:100:1: missed: statement clobbers memory: y2_425 = A (_420, iftmp.3_9);
+src/bench.c:100:1: missed: statement clobbers memory: z2_426 = A (_420, 0);
+src/bench.c:100:1: missed: statement clobbers memory: idx_429 = A (_428, 0);
+src/bench.c:100:1: missed: statement clobbers memory: d1_443 = run_f64 (k_22, x1_421, y1_422, z1_423, idx_429, n_416, iftmp.4_26);
+src/bench.c:100:1: missed: statement clobbers memory: ref_f64 (k_22, x2_424, y2_425, z2_426, idx_429, n_416, iftmp.4_26, &d2);
+src/bench.c:100:1: missed: statement clobbers memory: d1_473 = run_f64 (k_22, x1_421, y1_422, z1_423, idx_429, n_416, iftmp.4_26);
+src/bench.c:100:1: missed: statement clobbers memory: ref_f64 (k_22, x2_424, y2_425, z2_426, idx_429, n_416, iftmp.4_26, &d2);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (stderr.35_511, 2, "CHECK_OK %s %s n=%zu maxrel=%.3g\n", _510, "f64", n_416, mr_14);
+src/bench.c:100:1: missed: statement clobbers memory: x_295 = A (_294, iftmp.2_12);
+src/bench.c:100:1: missed: statement clobbers memory: y_296 = A (_294, iftmp.3_9);
+src/bench.c:100:1: missed: statement clobbers memory: z_297 = A (_294, 0);
+src/bench.c:100:1: missed: statement clobbers memory: idx_300 = A (_299, 0);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} 0.0;
+src/bench.c:100:1: missed: statement clobbers memory: r_351 = run_f64 (k_22, x_295, y_296, z_297, idx_300, N_34, iftmp.4_26);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.26_352 ={v} sink;
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} _353;
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:100:1: missed: statement clobbers memory: r_360 = run_f64 (k_22, x_295, y_296, z_297, idx_300, N_34, iftmp.4_26);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.27_361 ={v} sink;
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} _362;
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_381, "=d" hi_382);
+src/bench.c:51:1: missed: statement clobbers memory: k_saxpy_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_295, y_296, N_34);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.28_388 ={v} sink;
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} sink.28_388;
+src/bench.c:100:1: missed: statement clobbers memory: __asm__ __volatile__("" :  :  : "memory");
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_392, "=d" hi_393);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.29_404 ={v} sink;
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:86:10: missed: statement clobbers memory: __printf_chk (2, "%s,%s,%s,%zu,%zu,%zu,%zu,%d,%.6e,%.1f,%zu,%g\n", "native_fm_al", _412, "f64", N_34, iftmp.2_12, iftmp.3_9, iftmp.4_26, rep_670, _411, _409, _374, sink.29_404);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_1250, "=d" hi_1249);
+src/bench.c:51:1: missed: statement clobbers memory: k_stride_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_295, y_296, N_34, iftmp.4_26);
+src/bench.c:51:1: missed: statement clobbers memory: k_stencil_f64 (2.5e-1, 5.0e-1, 2.5e-1, x_295, y_296, N_34);
+src/bench.c:51:1: missed: statement clobbers memory: _1239 = k_dot_f64 (x_295, y_296, N_34);
+src/bench.c:51:1: missed: statement clobbers memory: k_mul_f64 (x_295, y_296, z_297, N_34);
+src/bench.c:51:1: missed: statement clobbers memory: k_gather_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_295, y_296, idx_300, N_34);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.28_1234 ={v} sink;
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} _1233;
+src/bench.c:100:1: missed: statement clobbers memory: __asm__ __volatile__("" :  :  : "memory");
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_1228, "=d" hi_1227);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.29_1214 ={v} sink;
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:86:10: missed: statement clobbers memory: __printf_chk (2, "%s,%s,%s,%zu,%zu,%zu,%zu,%d,%.6e,%.1f,%zu,%g\n", "native_fm_al", _1207, "f64", N_34, iftmp.2_12, iftmp.3_9, iftmp.4_26, rep_1259, _1208, _1211, _374, sink.29_1214);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (pretmp_1351, 2, "CHECK FAIL %s %s maxrel=%g tol=%g\n", pretmp_1352, "f64", mr_507, iftmp.33_506);
+src/bench.c:99:1: missed: statement clobbers memory: x1_189 = A (_188, iftmp.2_12);
+src/bench.c:99:1: missed: statement clobbers memory: y1_190 = A (_188, iftmp.3_9);
+src/bench.c:99:1: missed: statement clobbers memory: z1_191 = A (_188, 0);
+src/bench.c:99:1: missed: statement clobbers memory: x2_192 = A (_188, iftmp.2_12);
+src/bench.c:99:1: missed: statement clobbers memory: y2_193 = A (_188, iftmp.3_9);
+src/bench.c:99:1: missed: statement clobbers memory: z2_194 = A (_188, 0);
+src/bench.c:99:1: missed: statement clobbers memory: idx_197 = A (_196, 0);
+src/bench.c:99:1: missed: statement clobbers memory: d1_527 = run_f32 (k_22, x1_189, y1_190, z1_191, idx_197, n_184, iftmp.4_26);
+src/bench.c:99:1: missed: statement clobbers memory: ref_f32 (k_22, x2_192, y2_193, z2_194, idx_197, n_184, iftmp.4_26, &d2);
+src/bench.c:99:1: missed: statement clobbers memory: d1_243 = run_f32 (k_22, x1_189, y1_190, z1_191, idx_197, n_184, iftmp.4_26);
+src/bench.c:99:1: missed: statement clobbers memory: ref_f32 (k_22, x2_192, y2_193, z2_194, idx_197, n_184, iftmp.4_26, &d2);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (stderr.17_286, 2, "CHECK_OK %s %s n=%zu maxrel=%.3g\n", _285, "f32", n_184, mr_512);
+src/bench.c:99:1: missed: statement clobbers memory: x_58 = A (_57, iftmp.2_12);
+src/bench.c:99:1: missed: statement clobbers memory: y_59 = A (_57, iftmp.3_9);
+src/bench.c:99:1: missed: statement clobbers memory: z_60 = A (_57, 0);
+src/bench.c:99:1: missed: statement clobbers memory: idx_63 = A (_62, 0);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} 0.0;
+src/bench.c:99:1: missed: statement clobbers memory: _116 = run_f32 (k_22, x_58, y_59, z_60, idx_63, N_34, iftmp.4_26);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.8_118 ={v} sink;
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} _119;
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:99:1: missed: statement clobbers memory: _126 = run_f32 (k_22, x_58, y_59, z_60, idx_63, N_34, iftmp.4_26);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.9_128 ={v} sink;
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} _129;
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_148, "=d" hi_149);
+src/bench.c:50:1: missed: statement clobbers memory: k_saxpy_f32 (1.00000011920928955078125e+0, x_58, y_59, N_34);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.10_156 ={v} sink;
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} sink.10_156;
+src/bench.c:99:1: missed: statement clobbers memory: __asm__ __volatile__("" :  :  : "memory");
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_160, "=d" hi_161);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.11_172 ={v} sink;
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:86:10: missed: statement clobbers memory: __printf_chk (2, "%s,%s,%s,%zu,%zu,%zu,%zu,%d,%.6e,%.1f,%zu,%g\n", "native_fm_al", _180, "f32", N_34, iftmp.2_12, iftmp.3_9, iftmp.4_26, rep_181, _179, _177, _141, sink.11_172);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_1306, "=d" hi_1305);
+src/bench.c:50:1: missed: statement clobbers memory: k_stride_f32 (1.00000011920928955078125e+0, x_58, y_59, N_34, iftmp.4_26);
+src/bench.c:50:1: missed: statement clobbers memory: k_stencil_f32 (2.5e-1, 5.0e-1, 2.5e-1, x_58, y_59, N_34);
+src/bench.c:50:1: missed: statement clobbers memory: _1295 = k_dot_f32 (x_58, y_59, N_34);
+src/bench.c:50:1: missed: statement clobbers memory: k_mul_f32 (x_58, y_59, z_60, N_34);
+src/bench.c:50:1: missed: statement clobbers memory: k_gather_f32 (1.00000011920928955078125e+0, x_58, y_59, idx_63, N_34);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.10_1289 ={v} sink;
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} _1288;
+src/bench.c:99:1: missed: statement clobbers memory: __asm__ __volatile__("" :  :  : "memory");
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_1283, "=d" hi_1282);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.11_1269 ={v} sink;
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:86:10: missed: statement clobbers memory: __printf_chk (2, "%s,%s,%s,%zu,%zu,%zu,%zu,%d,%.6e,%.1f,%zu,%g\n", "native_fm_al", _1262, "f32", N_34, iftmp.2_12, iftmp.3_9, iftmp.4_26, rep_1315, _1263, _1266, _141, sink.11_1269);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (pretmp_1349, 2, "CHECK FAIL %s %s maxrel=%g tol=%g\n", pretmp_1350, "f32", mr_282, iftmp.15_281);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __builtin_fwrite ("N>=3\n", 1, 5, stderr.5_16);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __builtin_fwrite ("bad kernel\n", 1, 11, stderr.1_7);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (stderr.0_4, 2, "usage: %s kernel dtype N reps [offx offy stride]\n", _3);
+src/bench.c:103:46: missed: statement clobbers memory: puts ("variant,kernel,dtype,N,offx,offy,stride,rep,sec_per_call,tsc_per_call,iters,sink");
+src/bench.c:19:60: note: ***** Analysis failed with vector mode V4DI
+src/bench.c:19:60: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:19:60: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:19:60: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:19:60: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:19:60: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:19:60: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:19:60: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:67:93: missed: statement clobbers memory: p_8 = aligned_alloc (4096, sz_5);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __builtin_fwrite ("alloc fail\n", 1, 11, stderr.18_11);
+src/bench.c:67:155: missed: statement clobbers memory: exit (2);
+src/bench.c:67:155: note: ***** Analysis failed with vector mode V4DI
+src/bench.c:67:155: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+src/bench.c:28:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:28:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:28:1: note: vectorized 1 loops in function.
+src/bench.c:28:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:28:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:28:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:28:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:28:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:28:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:28:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:28:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:29:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:29:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:29:1: note: vectorized 1 loops in function.
+src/bench.c:29:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:29:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:29:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:29:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:29:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:29:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:29:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:29:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:30:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:30:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:30:1: note: vectorized 1 loops in function.
+src/bench.c:30:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:30:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:30:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:30:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:30:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:30:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:30:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:30:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:31:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:31:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:31:1: note: vectorized 1 loops in function.
+src/bench.c:31:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:31:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:31:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:31:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:31:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:31:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:31:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:31:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:32:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:32:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:32:1: missed: couldn't vectorize loop
+src/bench.c:32:1: missed: not vectorized: no vectype for stmt: _4 = *_3;
+ scalar_type: const float
+src/bench.c:32:1: note: vectorized 1 loops in function.
+src/bench.c:32:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:32:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:32:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:32:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:32:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:32:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:32:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:32:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:33:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:33:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:33:1: note: vectorized 1 loops in function.
+src/bench.c:33:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:33:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:33:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:33:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:33:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:33:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:33:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:33:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:50:1: missed: statement clobbers memory: k_gather_f32 (1.00000011920928955078125e+0, x_5(D), y_6(D), idx_7(D), n_8(D));
+src/bench.c:50:1: missed: statement clobbers memory: k_stride_f32 (1.00000011920928955078125e+0, x_5(D), y_6(D), n_8(D), s_11(D));
+src/bench.c:50:1: missed: statement clobbers memory: k_stencil_f32 (2.5e-1, 5.0e-1, 2.5e-1, x_5(D), y_6(D), n_8(D));
+src/bench.c:50:1: missed: statement clobbers memory: _14 = k_dot_f32 (x_5(D), y_6(D), n_8(D));
+src/bench.c:50:1: missed: statement clobbers memory: k_mul_f32 (x_5(D), y_6(D), z_15(D), n_8(D));
+src/bench.c:50:1: missed: statement clobbers memory: k_saxpy_f32 (1.00000011920928955078125e+0, x_5(D), y_6(D), n_8(D));
+src/bench.c:50:1: note: ***** Analysis failed with vector mode VOID
+src/bench.c:34:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:34:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:34:1: note: vectorized 1 loops in function.
+src/bench.c:34:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:34:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:34:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:34:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:34:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:34:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:34:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:34:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:35:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:35:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:35:1: note: vectorized 1 loops in function.
+src/bench.c:35:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:35:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:35:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:35:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:35:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:35:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:35:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:35:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:36:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:36:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:36:1: note: vectorized 1 loops in function.
+src/bench.c:36:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:36:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:36:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:36:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:36:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:36:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:36:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:36:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:37:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:37:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:37:1: note: vectorized 1 loops in function.
+src/bench.c:37:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:37:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:37:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:37:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:37:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:37:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:37:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:37:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:38:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:38:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:38:1: missed: couldn't vectorize loop
+src/bench.c:38:1: missed: not vectorized: no vectype for stmt: _4 = *_3;
+ scalar_type: const double
+src/bench.c:38:1: note: vectorized 1 loops in function.
+src/bench.c:38:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:38:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:38:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:38:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:38:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:38:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:38:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:38:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:39:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:39:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:39:1: note: vectorized 1 loops in function.
+src/bench.c:39:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:39:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:39:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:39:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:39:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:39:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:39:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:39:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:51:1: missed: statement clobbers memory: k_gather_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_5(D), y_6(D), idx_7(D), n_8(D));
+src/bench.c:51:1: missed: statement clobbers memory: k_stride_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_5(D), y_6(D), n_8(D), s_11(D));
+src/bench.c:51:1: missed: statement clobbers memory: k_stencil_f64 (2.5e-1, 5.0e-1, 2.5e-1, x_5(D), y_6(D), n_8(D));
+src/bench.c:51:1: missed: statement clobbers memory: _14 = k_dot_f64 (x_5(D), y_6(D), n_8(D));
+src/bench.c:51:1: missed: statement clobbers memory: k_mul_f64 (x_5(D), y_6(D), z_15(D), n_8(D));
+src/bench.c:51:1: missed: statement clobbers memory: k_saxpy_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_5(D), y_6(D), n_8(D));
+src/bench.c:51:1: note: ***** Analysis failed with vector mode VOID
+src/bench.c:99:1: missed: couldn't vectorize loop
+src/bench.c:99:1: missed: not vectorized: control flow in loop.
+src/bench.c:99:1: missed: couldn't vectorize loop
+src/bench.c:99:1: missed: not vectorized: control flow in loop.
+src/bench.c:99:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:99:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:99:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:99:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:100:1: missed: not vectorized: control flow in loop.
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:100:1: missed: not vectorized: control flow in loop.
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:51:1: missed: statement clobbers memory: k_saxpy_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_295, y_296, N_34);
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:100:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:100:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:100:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:100:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:105:26: missed: couldn't vectorize loop
+src/bench.c:105:26: missed: not vectorized: control flow in loop.
+src/bench.c:102:5: note: vectorized 3 loops in function.
+src/bench.c:103:17: missed: statement clobbers memory: _2 = strcmp (_1, "--header");
+src/bench.c:105:38: missed: statement clobbers memory: _332 = strcmp (_1, "saxpy");
+src/bench.c:105:38: missed: statement clobbers memory: _250 = strcmp (_1, "mul");
+src/bench.c:105:38: missed: statement clobbers memory: _260 = strcmp (_1, "dot");
+src/bench.c:105:38: missed: statement clobbers memory: _268 = strcmp (_1, "stencil");
+src/bench.c:105:38: missed: statement clobbers memory: _987 = strcmp (_1, "stride");
+src/bench.c:105:38: missed: statement clobbers memory: _6 = strcmp (_1, "gather");
+src/bench.c:106:12: missed: statement clobbers memory: N_34 = strtoull (_8, 0B, 10);
+/usr/include/stdlib.h:483:16: missed: statement clobbers memory: _46 = strtol (_10, 0B, 10);
+src/bench.c:107:22: missed: statement clobbers memory: iftmp.2_36 = strtoull (_11, 0B, 10);
+src/bench.c:107:60: missed: statement clobbers memory: iftmp.3_38 = strtoull (_13, 0B, 10);
+src/bench.c:107:95: missed: statement clobbers memory: iftmp.4_40 = strtoull (_15, 0B, 10);
+src/bench.c:109:7: missed: statement clobbers memory: _19 = strcmp (_18, "f32");
+src/bench.c:110:7: missed: statement clobbers memory: _20 = strcmp (_18, "f64");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __builtin_fwrite ("bad dtype\n", 1, 10, stderr.6_21);
+src/bench.c:100:1: missed: statement clobbers memory: x1_421 = A (_420, iftmp.2_12);
+src/bench.c:100:1: missed: statement clobbers memory: y1_422 = A (_420, iftmp.3_9);
+src/bench.c:100:1: missed: statement clobbers memory: z1_423 = A (_420, 0);
+src/bench.c:100:1: missed: statement clobbers memory: x2_424 = A (_420, iftmp.2_12);
+src/bench.c:100:1: missed: statement clobbers memory: y2_425 = A (_420, iftmp.3_9);
+src/bench.c:100:1: missed: statement clobbers memory: z2_426 = A (_420, 0);
+src/bench.c:100:1: missed: statement clobbers memory: idx_429 = A (_428, 0);
+src/bench.c:100:1: missed: statement clobbers memory: d1_443 = run_f64 (k_22, x1_421, y1_422, z1_423, idx_429, n_416, iftmp.4_26);
+src/bench.c:100:1: missed: statement clobbers memory: ref_f64 (k_22, x2_424, y2_425, z2_426, idx_429, n_416, iftmp.4_26, &d2);
+src/bench.c:100:1: missed: statement clobbers memory: d1_473 = run_f64 (k_22, x1_421, y1_422, z1_423, idx_429, n_416, iftmp.4_26);
+src/bench.c:100:1: missed: statement clobbers memory: ref_f64 (k_22, x2_424, y2_425, z2_426, idx_429, n_416, iftmp.4_26, &d2);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (stderr.35_511, 2, "CHECK_OK %s %s n=%zu maxrel=%.3g\n", _510, "f64", n_416, mr_14);
+src/bench.c:100:1: missed: statement clobbers memory: x_295 = A (_294, iftmp.2_12);
+src/bench.c:100:1: missed: statement clobbers memory: y_296 = A (_294, iftmp.3_9);
+src/bench.c:100:1: missed: statement clobbers memory: z_297 = A (_294, 0);
+src/bench.c:100:1: missed: statement clobbers memory: idx_300 = A (_299, 0);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} 0.0;
+src/bench.c:100:1: missed: statement clobbers memory: r_351 = run_f64 (k_22, x_295, y_296, z_297, idx_300, N_34, iftmp.4_26);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.26_352 ={v} sink;
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} _353;
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:100:1: missed: statement clobbers memory: r_360 = run_f64 (k_22, x_295, y_296, z_297, idx_300, N_34, iftmp.4_26);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.27_361 ={v} sink;
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} _362;
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_381, "=d" hi_382);
+src/bench.c:51:1: missed: statement clobbers memory: k_saxpy_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_295, y_296, N_34);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.28_388 ={v} sink;
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} sink.28_388;
+src/bench.c:100:1: missed: statement clobbers memory: __asm__ __volatile__("" :  :  : "memory");
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_392, "=d" hi_393);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.29_404 ={v} sink;
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:86:10: missed: statement clobbers memory: __printf_chk (2, "%s,%s,%s,%zu,%zu,%zu,%zu,%d,%.6e,%.1f,%zu,%g\n", "native_fm_al", _412, "f64", N_34, iftmp.2_12, iftmp.3_9, iftmp.4_26, rep_670, _411, _409, _374, sink.29_404);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_1250, "=d" hi_1249);
+src/bench.c:51:1: missed: statement clobbers memory: k_stride_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_295, y_296, N_34, iftmp.4_26);
+src/bench.c:51:1: missed: statement clobbers memory: k_stencil_f64 (2.5e-1, 5.0e-1, 2.5e-1, x_295, y_296, N_34);
+src/bench.c:51:1: missed: statement clobbers memory: _1239 = k_dot_f64 (x_295, y_296, N_34);
+src/bench.c:51:1: missed: statement clobbers memory: k_mul_f64 (x_295, y_296, z_297, N_34);
+src/bench.c:51:1: missed: statement clobbers memory: k_gather_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_295, y_296, idx_300, N_34);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.28_1234 ={v} sink;
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} _1233;
+src/bench.c:100:1: missed: statement clobbers memory: __asm__ __volatile__("" :  :  : "memory");
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_1228, "=d" hi_1227);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.29_1214 ={v} sink;
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:86:10: missed: statement clobbers memory: __printf_chk (2, "%s,%s,%s,%zu,%zu,%zu,%zu,%d,%.6e,%.1f,%zu,%g\n", "native_fm_al", _1207, "f64", N_34, iftmp.2_12, iftmp.3_9, iftmp.4_26, rep_1259, _1208, _1211, _374, sink.29_1214);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (pretmp_1351, 2, "CHECK FAIL %s %s maxrel=%g tol=%g\n", pretmp_1352, "f64", mr_507, iftmp.33_506);
+src/bench.c:99:1: missed: statement clobbers memory: x1_189 = A (_188, iftmp.2_12);
+src/bench.c:99:1: missed: statement clobbers memory: y1_190 = A (_188, iftmp.3_9);
+src/bench.c:99:1: missed: statement clobbers memory: z1_191 = A (_188, 0);
+src/bench.c:99:1: missed: statement clobbers memory: x2_192 = A (_188, iftmp.2_12);
+src/bench.c:99:1: missed: statement clobbers memory: y2_193 = A (_188, iftmp.3_9);
+src/bench.c:99:1: missed: statement clobbers memory: z2_194 = A (_188, 0);
+src/bench.c:99:1: missed: statement clobbers memory: idx_197 = A (_196, 0);
+src/bench.c:99:1: missed: statement clobbers memory: d1_527 = run_f32 (k_22, x1_189, y1_190, z1_191, idx_197, n_184, iftmp.4_26);
+src/bench.c:99:1: missed: statement clobbers memory: ref_f32 (k_22, x2_192, y2_193, z2_194, idx_197, n_184, iftmp.4_26, &d2);
+src/bench.c:99:1: missed: statement clobbers memory: d1_243 = run_f32 (k_22, x1_189, y1_190, z1_191, idx_197, n_184, iftmp.4_26);
+src/bench.c:99:1: missed: statement clobbers memory: ref_f32 (k_22, x2_192, y2_193, z2_194, idx_197, n_184, iftmp.4_26, &d2);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (stderr.17_286, 2, "CHECK_OK %s %s n=%zu maxrel=%.3g\n", _285, "f32", n_184, mr_512);
+src/bench.c:99:1: missed: statement clobbers memory: x_58 = A (_57, iftmp.2_12);
+src/bench.c:99:1: missed: statement clobbers memory: y_59 = A (_57, iftmp.3_9);
+src/bench.c:99:1: missed: statement clobbers memory: z_60 = A (_57, 0);
+src/bench.c:99:1: missed: statement clobbers memory: idx_63 = A (_62, 0);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} 0.0;
+src/bench.c:99:1: missed: statement clobbers memory: _116 = run_f32 (k_22, x_58, y_59, z_60, idx_63, N_34, iftmp.4_26);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.8_118 ={v} sink;
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} _119;
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:99:1: missed: statement clobbers memory: _126 = run_f32 (k_22, x_58, y_59, z_60, idx_63, N_34, iftmp.4_26);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.9_128 ={v} sink;
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} _129;
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_148, "=d" hi_149);
+src/bench.c:50:1: missed: statement clobbers memory: k_saxpy_f32 (1.00000011920928955078125e+0, x_58, y_59, N_34);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.10_156 ={v} sink;
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} sink.10_156;
+src/bench.c:99:1: missed: statement clobbers memory: __asm__ __volatile__("" :  :  : "memory");
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_160, "=d" hi_161);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.11_172 ={v} sink;
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:86:10: missed: statement clobbers memory: __printf_chk (2, "%s,%s,%s,%zu,%zu,%zu,%zu,%d,%.6e,%.1f,%zu,%g\n", "native_fm_al", _180, "f32", N_34, iftmp.2_12, iftmp.3_9, iftmp.4_26, rep_181, _179, _177, _141, sink.11_172);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_1306, "=d" hi_1305);
+src/bench.c:50:1: missed: statement clobbers memory: k_stride_f32 (1.00000011920928955078125e+0, x_58, y_59, N_34, iftmp.4_26);
+src/bench.c:50:1: missed: statement clobbers memory: k_stencil_f32 (2.5e-1, 5.0e-1, 2.5e-1, x_58, y_59, N_34);
+src/bench.c:50:1: missed: statement clobbers memory: _1295 = k_dot_f32 (x_58, y_59, N_34);
+src/bench.c:50:1: missed: statement clobbers memory: k_mul_f32 (x_58, y_59, z_60, N_34);
+src/bench.c:50:1: missed: statement clobbers memory: k_gather_f32 (1.00000011920928955078125e+0, x_58, y_59, idx_63, N_34);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.10_1289 ={v} sink;
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} _1288;
+src/bench.c:99:1: missed: statement clobbers memory: __asm__ __volatile__("" :  :  : "memory");
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_1283, "=d" hi_1282);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.11_1269 ={v} sink;
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:86:10: missed: statement clobbers memory: __printf_chk (2, "%s,%s,%s,%zu,%zu,%zu,%zu,%d,%.6e,%.1f,%zu,%g\n", "native_fm_al", _1262, "f32", N_34, iftmp.2_12, iftmp.3_9, iftmp.4_26, rep_1315, _1263, _1266, _141, sink.11_1269);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (pretmp_1349, 2, "CHECK FAIL %s %s maxrel=%g tol=%g\n", pretmp_1350, "f32", mr_282, iftmp.15_281);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __builtin_fwrite ("N>=3\n", 1, 5, stderr.5_16);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __builtin_fwrite ("bad kernel\n", 1, 11, stderr.1_7);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (stderr.0_4, 2, "usage: %s kernel dtype N reps [offx offy stride]\n", _3);
+src/bench.c:103:46: missed: statement clobbers memory: puts ("variant,kernel,dtype,N,offx,offy,stride,rep,sec_per_call,tsc_per_call,iters,sink");
+src/bench.c:19:60: note: ***** Analysis failed with vector mode V4DI
+src/bench.c:19:60: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:19:60: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:19:60: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:19:60: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:19:60: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:19:60: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:19:60: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:67:93: missed: statement clobbers memory: p_8 = aligned_alloc (4096, sz_5);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __builtin_fwrite ("alloc fail\n", 1, 11, stderr.18_11);
+src/bench.c:67:155: missed: statement clobbers memory: exit (2);
+src/bench.c:67:155: note: ***** Analysis failed with vector mode V4DI
+src/bench.c:67:155: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+src/bench.c:28:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:28:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:28:1: note: vectorized 1 loops in function.
+src/bench.c:28:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:28:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:28:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:28:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:28:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:28:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:28:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:28:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:29:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:29:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:29:1: note: vectorized 1 loops in function.
+src/bench.c:29:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:29:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:29:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:29:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:29:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:29:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:29:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:29:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:30:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:30:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:30:1: note: vectorized 1 loops in function.
+src/bench.c:30:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:30:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:30:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:30:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:30:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:30:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:30:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:30:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:31:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:31:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:31:1: note: vectorized 1 loops in function.
+src/bench.c:31:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:31:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:31:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:31:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:31:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:31:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:31:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:31:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:32:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:32:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:32:1: missed: couldn't vectorize loop
+src/bench.c:32:1: missed: not vectorized: no vectype for stmt: _4 = *_3;
+ scalar_type: const float
+src/bench.c:32:1: note: vectorized 1 loops in function.
+src/bench.c:32:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:32:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:32:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:32:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:32:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:32:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:32:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:32:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:33:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:33:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:33:1: note: vectorized 1 loops in function.
+src/bench.c:33:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:33:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:33:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:33:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:33:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:33:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:33:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:33:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:50:1: missed: statement clobbers memory: k_gather_f32 (1.00000011920928955078125e+0, x_5(D), y_6(D), idx_7(D), n_8(D));
+src/bench.c:50:1: missed: statement clobbers memory: k_stride_f32 (1.00000011920928955078125e+0, x_5(D), y_6(D), n_8(D), s_11(D));
+src/bench.c:50:1: missed: statement clobbers memory: k_stencil_f32 (2.5e-1, 5.0e-1, 2.5e-1, x_5(D), y_6(D), n_8(D));
+src/bench.c:50:1: missed: statement clobbers memory: _14 = k_dot_f32 (x_5(D), y_6(D), n_8(D));
+src/bench.c:50:1: missed: statement clobbers memory: k_mul_f32 (x_5(D), y_6(D), z_15(D), n_8(D));
+src/bench.c:50:1: missed: statement clobbers memory: k_saxpy_f32 (1.00000011920928955078125e+0, x_5(D), y_6(D), n_8(D));
+src/bench.c:50:1: note: ***** Analysis failed with vector mode VOID
+src/bench.c:34:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:34:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:34:1: note: vectorized 1 loops in function.
+src/bench.c:34:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:34:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:34:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:34:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:34:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:34:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:34:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:34:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:35:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:35:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:35:1: note: vectorized 1 loops in function.
+src/bench.c:35:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:35:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:35:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:35:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:35:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:35:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:35:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:35:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:36:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:36:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:36:1: note: vectorized 1 loops in function.
+src/bench.c:36:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:36:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:36:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:36:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:36:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:36:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:36:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:36:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:37:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:37:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:37:1: note: vectorized 1 loops in function.
+src/bench.c:37:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:37:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:37:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:37:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:37:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:37:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:37:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:37:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:38:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:38:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:38:1: missed: couldn't vectorize loop
+src/bench.c:38:1: missed: not vectorized: no vectype for stmt: _4 = *_3;
+ scalar_type: const double
+src/bench.c:38:1: note: vectorized 1 loops in function.
+src/bench.c:38:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:38:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:38:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:38:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:38:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:38:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:38:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:38:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:39:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:39:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:39:1: note: vectorized 1 loops in function.
+src/bench.c:39:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:39:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:39:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:39:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:39:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:39:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:39:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:39:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:51:1: missed: statement clobbers memory: k_gather_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_5(D), y_6(D), idx_7(D), n_8(D));
+src/bench.c:51:1: missed: statement clobbers memory: k_stride_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_5(D), y_6(D), n_8(D), s_11(D));
+src/bench.c:51:1: missed: statement clobbers memory: k_stencil_f64 (2.5e-1, 5.0e-1, 2.5e-1, x_5(D), y_6(D), n_8(D));
+src/bench.c:51:1: missed: statement clobbers memory: _14 = k_dot_f64 (x_5(D), y_6(D), n_8(D));
+src/bench.c:51:1: missed: statement clobbers memory: k_mul_f64 (x_5(D), y_6(D), z_15(D), n_8(D));
+src/bench.c:51:1: missed: statement clobbers memory: k_saxpy_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_5(D), y_6(D), n_8(D));
+src/bench.c:51:1: note: ***** Analysis failed with vector mode VOID
+src/bench.c:99:1: missed: couldn't vectorize loop
+src/bench.c:99:1: missed: not vectorized: control flow in loop.
+src/bench.c:99:1: missed: couldn't vectorize loop
+src/bench.c:99:1: missed: not vectorized: control flow in loop.
+src/bench.c:99:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:99:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:99:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:99:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:100:1: missed: not vectorized: control flow in loop.
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:100:1: missed: not vectorized: control flow in loop.
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:51:1: missed: statement clobbers memory: k_saxpy_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_295, y_296, N_34);
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:100:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:100:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:100:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:100:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:105:26: missed: couldn't vectorize loop
+src/bench.c:105:26: missed: not vectorized: control flow in loop.
+src/bench.c:102:5: note: vectorized 3 loops in function.
+src/bench.c:103:17: missed: statement clobbers memory: _2 = strcmp (_1, "--header");
+src/bench.c:105:38: missed: statement clobbers memory: _332 = strcmp (_1, "saxpy");
+src/bench.c:105:38: missed: statement clobbers memory: _250 = strcmp (_1, "mul");
+src/bench.c:105:38: missed: statement clobbers memory: _260 = strcmp (_1, "dot");
+src/bench.c:105:38: missed: statement clobbers memory: _268 = strcmp (_1, "stencil");
+src/bench.c:105:38: missed: statement clobbers memory: _987 = strcmp (_1, "stride");
+src/bench.c:105:38: missed: statement clobbers memory: _6 = strcmp (_1, "gather");
+src/bench.c:106:12: missed: statement clobbers memory: N_34 = strtoull (_8, 0B, 10);
+/usr/include/stdlib.h:483:16: missed: statement clobbers memory: _46 = strtol (_10, 0B, 10);
+src/bench.c:107:22: missed: statement clobbers memory: iftmp.2_36 = strtoull (_11, 0B, 10);
+src/bench.c:107:60: missed: statement clobbers memory: iftmp.3_38 = strtoull (_13, 0B, 10);
+src/bench.c:107:95: missed: statement clobbers memory: iftmp.4_40 = strtoull (_15, 0B, 10);
+src/bench.c:109:7: missed: statement clobbers memory: _19 = strcmp (_18, "f32");
+src/bench.c:110:7: missed: statement clobbers memory: _20 = strcmp (_18, "f64");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __builtin_fwrite ("bad dtype\n", 1, 10, stderr.6_21);
+src/bench.c:100:1: missed: statement clobbers memory: x1_421 = A (_420, iftmp.2_12);
+src/bench.c:100:1: missed: statement clobbers memory: y1_422 = A (_420, iftmp.3_9);
+src/bench.c:100:1: missed: statement clobbers memory: z1_423 = A (_420, 0);
+src/bench.c:100:1: missed: statement clobbers memory: x2_424 = A (_420, iftmp.2_12);
+src/bench.c:100:1: missed: statement clobbers memory: y2_425 = A (_420, iftmp.3_9);
+src/bench.c:100:1: missed: statement clobbers memory: z2_426 = A (_420, 0);
+src/bench.c:100:1: missed: statement clobbers memory: idx_429 = A (_428, 0);
+src/bench.c:100:1: missed: statement clobbers memory: d1_443 = run_f64 (k_22, x1_421, y1_422, z1_423, idx_429, n_416, iftmp.4_26);
+src/bench.c:100:1: missed: statement clobbers memory: ref_f64 (k_22, x2_424, y2_425, z2_426, idx_429, n_416, iftmp.4_26, &d2);
+src/bench.c:100:1: missed: statement clobbers memory: d1_473 = run_f64 (k_22, x1_421, y1_422, z1_423, idx_429, n_416, iftmp.4_26);
+src/bench.c:100:1: missed: statement clobbers memory: ref_f64 (k_22, x2_424, y2_425, z2_426, idx_429, n_416, iftmp.4_26, &d2);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (stderr.35_511, 2, "CHECK_OK %s %s n=%zu maxrel=%.3g\n", _510, "f64", n_416, mr_14);
+src/bench.c:100:1: missed: statement clobbers memory: x_295 = A (_294, iftmp.2_12);
+src/bench.c:100:1: missed: statement clobbers memory: y_296 = A (_294, iftmp.3_9);
+src/bench.c:100:1: missed: statement clobbers memory: z_297 = A (_294, 0);
+src/bench.c:100:1: missed: statement clobbers memory: idx_300 = A (_299, 0);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} 0.0;
+src/bench.c:100:1: missed: statement clobbers memory: r_351 = run_f64 (k_22, x_295, y_296, z_297, idx_300, N_34, iftmp.4_26);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.26_352 ={v} sink;
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} _353;
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:100:1: missed: statement clobbers memory: r_360 = run_f64 (k_22, x_295, y_296, z_297, idx_300, N_34, iftmp.4_26);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.27_361 ={v} sink;
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} _362;
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_381, "=d" hi_382);
+src/bench.c:51:1: missed: statement clobbers memory: k_saxpy_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_295, y_296, N_34);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.28_388 ={v} sink;
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} sink.28_388;
+src/bench.c:100:1: missed: statement clobbers memory: __asm__ __volatile__("" :  :  : "memory");
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_392, "=d" hi_393);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.29_404 ={v} sink;
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:86:10: missed: statement clobbers memory: __printf_chk (2, "%s,%s,%s,%zu,%zu,%zu,%zu,%d,%.6e,%.1f,%zu,%g\n", "native_fm_al", _412, "f64", N_34, iftmp.2_12, iftmp.3_9, iftmp.4_26, rep_670, _411, _409, _374, sink.29_404);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_1250, "=d" hi_1249);
+src/bench.c:51:1: missed: statement clobbers memory: k_stride_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_295, y_296, N_34, iftmp.4_26);
+src/bench.c:51:1: missed: statement clobbers memory: k_stencil_f64 (2.5e-1, 5.0e-1, 2.5e-1, x_295, y_296, N_34);
+src/bench.c:51:1: missed: statement clobbers memory: _1239 = k_dot_f64 (x_295, y_296, N_34);
+src/bench.c:51:1: missed: statement clobbers memory: k_mul_f64 (x_295, y_296, z_297, N_34);
+src/bench.c:51:1: missed: statement clobbers memory: k_gather_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_295, y_296, idx_300, N_34);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.28_1234 ={v} sink;
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} _1233;
+src/bench.c:100:1: missed: statement clobbers memory: __asm__ __volatile__("" :  :  : "memory");
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_1228, "=d" hi_1227);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.29_1214 ={v} sink;
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:86:10: missed: statement clobbers memory: __printf_chk (2, "%s,%s,%s,%zu,%zu,%zu,%zu,%d,%.6e,%.1f,%zu,%g\n", "native_fm_al", _1207, "f64", N_34, iftmp.2_12, iftmp.3_9, iftmp.4_26, rep_1259, _1208, _1211, _374, sink.29_1214);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (pretmp_1351, 2, "CHECK FAIL %s %s maxrel=%g tol=%g\n", pretmp_1352, "f64", mr_507, iftmp.33_506);
+src/bench.c:99:1: missed: statement clobbers memory: x1_189 = A (_188, iftmp.2_12);
+src/bench.c:99:1: missed: statement clobbers memory: y1_190 = A (_188, iftmp.3_9);
+src/bench.c:99:1: missed: statement clobbers memory: z1_191 = A (_188, 0);
+src/bench.c:99:1: missed: statement clobbers memory: x2_192 = A (_188, iftmp.2_12);
+src/bench.c:99:1: missed: statement clobbers memory: y2_193 = A (_188, iftmp.3_9);
+src/bench.c:99:1: missed: statement clobbers memory: z2_194 = A (_188, 0);
+src/bench.c:99:1: missed: statement clobbers memory: idx_197 = A (_196, 0);
+src/bench.c:99:1: missed: statement clobbers memory: d1_527 = run_f32 (k_22, x1_189, y1_190, z1_191, idx_197, n_184, iftmp.4_26);
+src/bench.c:99:1: missed: statement clobbers memory: ref_f32 (k_22, x2_192, y2_193, z2_194, idx_197, n_184, iftmp.4_26, &d2);
+src/bench.c:99:1: missed: statement clobbers memory: d1_243 = run_f32 (k_22, x1_189, y1_190, z1_191, idx_197, n_184, iftmp.4_26);
+src/bench.c:99:1: missed: statement clobbers memory: ref_f32 (k_22, x2_192, y2_193, z2_194, idx_197, n_184, iftmp.4_26, &d2);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (stderr.17_286, 2, "CHECK_OK %s %s n=%zu maxrel=%.3g\n", _285, "f32", n_184, mr_512);
+src/bench.c:99:1: missed: statement clobbers memory: x_58 = A (_57, iftmp.2_12);
+src/bench.c:99:1: missed: statement clobbers memory: y_59 = A (_57, iftmp.3_9);
+src/bench.c:99:1: missed: statement clobbers memory: z_60 = A (_57, 0);
+src/bench.c:99:1: missed: statement clobbers memory: idx_63 = A (_62, 0);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} 0.0;
+src/bench.c:99:1: missed: statement clobbers memory: _116 = run_f32 (k_22, x_58, y_59, z_60, idx_63, N_34, iftmp.4_26);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.8_118 ={v} sink;
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} _119;
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:99:1: missed: statement clobbers memory: _126 = run_f32 (k_22, x_58, y_59, z_60, idx_63, N_34, iftmp.4_26);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.9_128 ={v} sink;
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} _129;
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_148, "=d" hi_149);
+src/bench.c:50:1: missed: statement clobbers memory: k_saxpy_f32 (1.00000011920928955078125e+0, x_58, y_59, N_34);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.10_156 ={v} sink;
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} sink.10_156;
+src/bench.c:99:1: missed: statement clobbers memory: __asm__ __volatile__("" :  :  : "memory");
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_160, "=d" hi_161);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.11_172 ={v} sink;
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:86:10: missed: statement clobbers memory: __printf_chk (2, "%s,%s,%s,%zu,%zu,%zu,%zu,%d,%.6e,%.1f,%zu,%g\n", "native_fm_al", _180, "f32", N_34, iftmp.2_12, iftmp.3_9, iftmp.4_26, rep_181, _179, _177, _141, sink.11_172);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_1306, "=d" hi_1305);
+src/bench.c:50:1: missed: statement clobbers memory: k_stride_f32 (1.00000011920928955078125e+0, x_58, y_59, N_34, iftmp.4_26);
+src/bench.c:50:1: missed: statement clobbers memory: k_stencil_f32 (2.5e-1, 5.0e-1, 2.5e-1, x_58, y_59, N_34);
+src/bench.c:50:1: missed: statement clobbers memory: _1295 = k_dot_f32 (x_58, y_59, N_34);
+src/bench.c:50:1: missed: statement clobbers memory: k_mul_f32 (x_58, y_59, z_60, N_34);
+src/bench.c:50:1: missed: statement clobbers memory: k_gather_f32 (1.00000011920928955078125e+0, x_58, y_59, idx_63, N_34);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.10_1289 ={v} sink;
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} _1288;
+src/bench.c:99:1: missed: statement clobbers memory: __asm__ __volatile__("" :  :  : "memory");
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_1283, "=d" hi_1282);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.11_1269 ={v} sink;
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:86:10: missed: statement clobbers memory: __printf_chk (2, "%s,%s,%s,%zu,%zu,%zu,%zu,%d,%.6e,%.1f,%zu,%g\n", "native_fm_al", _1262, "f32", N_34, iftmp.2_12, iftmp.3_9, iftmp.4_26, rep_1315, _1263, _1266, _141, sink.11_1269);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (pretmp_1349, 2, "CHECK FAIL %s %s maxrel=%g tol=%g\n", pretmp_1350, "f32", mr_282, iftmp.15_281);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __builtin_fwrite ("N>=3\n", 1, 5, stderr.5_16);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __builtin_fwrite ("bad kernel\n", 1, 11, stderr.1_7);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (stderr.0_4, 2, "usage: %s kernel dtype N reps [offx offy stride]\n", _3);
+src/bench.c:103:46: missed: statement clobbers memory: puts ("variant,kernel,dtype,N,offx,offy,stride,rep,sec_per_call,tsc_per_call,iters,sink");
+src/bench.c:19:60: note: ***** Analysis failed with vector mode V4DI
+src/bench.c:19:60: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:19:60: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:19:60: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:19:60: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:19:60: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:19:60: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:19:60: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:67:93: missed: statement clobbers memory: p_8 = aligned_alloc (4096, sz_5);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __builtin_fwrite ("alloc fail\n", 1, 11, stderr.18_11);
+src/bench.c:67:155: missed: statement clobbers memory: exit (2);
+src/bench.c:67:155: note: ***** Analysis failed with vector mode V4DI
+src/bench.c:67:155: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+src/bench.c:28:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:28:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:28:1: note: vectorized 1 loops in function.
+src/bench.c:28:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:28:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:28:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:28:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:28:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:28:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:28:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:28:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:29:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:29:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:29:1: note: vectorized 1 loops in function.
+src/bench.c:29:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:29:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:29:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:29:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:29:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:29:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:29:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:29:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:30:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:30:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:30:1: note: vectorized 1 loops in function.
+src/bench.c:30:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:30:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:30:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:30:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:30:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:30:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:30:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:30:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:31:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:31:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:31:1: note: vectorized 1 loops in function.
+src/bench.c:31:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:31:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:31:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:31:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:31:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:31:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:31:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:31:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:32:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:32:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:32:1: missed: couldn't vectorize loop
+src/bench.c:32:1: missed: not vectorized: no vectype for stmt: _4 = *_3;
+ scalar_type: const float
+src/bench.c:32:1: note: vectorized 1 loops in function.
+src/bench.c:32:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:32:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:32:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:32:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:32:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:32:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:32:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:32:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:33:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:33:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:33:1: note: vectorized 1 loops in function.
+src/bench.c:33:1: note: ***** Analysis failed with vector mode V8SF
+src/bench.c:33:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:33:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:33:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:33:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:33:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:33:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:33:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:50:1: missed: statement clobbers memory: k_gather_f32 (1.00000011920928955078125e+0, x_5(D), y_6(D), idx_7(D), n_8(D));
+src/bench.c:50:1: missed: statement clobbers memory: k_stride_f32 (1.00000011920928955078125e+0, x_5(D), y_6(D), n_8(D), s_11(D));
+src/bench.c:50:1: missed: statement clobbers memory: k_stencil_f32 (2.5e-1, 5.0e-1, 2.5e-1, x_5(D), y_6(D), n_8(D));
+src/bench.c:50:1: missed: statement clobbers memory: _14 = k_dot_f32 (x_5(D), y_6(D), n_8(D));
+src/bench.c:50:1: missed: statement clobbers memory: k_mul_f32 (x_5(D), y_6(D), z_15(D), n_8(D));
+src/bench.c:50:1: missed: statement clobbers memory: k_saxpy_f32 (1.00000011920928955078125e+0, x_5(D), y_6(D), n_8(D));
+src/bench.c:50:1: note: ***** Analysis failed with vector mode VOID
+src/bench.c:34:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:34:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:34:1: note: vectorized 1 loops in function.
+src/bench.c:34:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:34:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:34:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:34:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:34:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:34:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:34:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:34:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:35:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:35:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:35:1: note: vectorized 1 loops in function.
+src/bench.c:35:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:35:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:35:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:35:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:35:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:35:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:35:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:35:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:36:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:36:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:36:1: note: vectorized 1 loops in function.
+src/bench.c:36:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:36:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:36:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:36:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:36:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:36:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:36:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:36:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:37:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:37:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:37:1: note: vectorized 1 loops in function.
+src/bench.c:37:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:37:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:37:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:37:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:37:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:37:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:37:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:37:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:38:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:38:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:38:1: missed: couldn't vectorize loop
+src/bench.c:38:1: missed: not vectorized: no vectype for stmt: _4 = *_3;
+ scalar_type: const double
+src/bench.c:38:1: note: vectorized 1 loops in function.
+src/bench.c:38:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:38:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:38:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:38:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:38:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:38:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:38:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:38:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:39:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:39:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:39:1: note: vectorized 1 loops in function.
+src/bench.c:39:1: note: ***** Analysis failed with vector mode V4DF
+src/bench.c:39:1: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:39:1: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:39:1: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:39:1: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:39:1: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:39:1: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:39:1: note: ***** Analysis failed with vector mode V4QI
+src/bench.c:51:1: missed: statement clobbers memory: k_gather_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_5(D), y_6(D), idx_7(D), n_8(D));
+src/bench.c:51:1: missed: statement clobbers memory: k_stride_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_5(D), y_6(D), n_8(D), s_11(D));
+src/bench.c:51:1: missed: statement clobbers memory: k_stencil_f64 (2.5e-1, 5.0e-1, 2.5e-1, x_5(D), y_6(D), n_8(D));
+src/bench.c:51:1: missed: statement clobbers memory: _14 = k_dot_f64 (x_5(D), y_6(D), n_8(D));
+src/bench.c:51:1: missed: statement clobbers memory: k_mul_f64 (x_5(D), y_6(D), z_15(D), n_8(D));
+src/bench.c:51:1: missed: statement clobbers memory: k_saxpy_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_5(D), y_6(D), n_8(D));
+src/bench.c:51:1: note: ***** Analysis failed with vector mode VOID
+src/bench.c:99:1: missed: couldn't vectorize loop
+src/bench.c:99:1: missed: not vectorized: control flow in loop.
+src/bench.c:99:1: missed: couldn't vectorize loop
+src/bench.c:99:1: missed: not vectorized: control flow in loop.
+src/bench.c:99:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:99:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:99:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:99:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:100:1: missed: not vectorized: control flow in loop.
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:100:1: missed: not vectorized: control flow in loop.
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:51:1: missed: statement clobbers memory: k_saxpy_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_295, y_296, N_34);
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:100:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:100:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:100:1: optimized: loop vectorized using 32 byte vectors
+src/bench.c:100:1: optimized: loop vectorized using 16 byte vectors
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:100:1: missed: couldn't vectorize loop
+src/bench.c:19:37: missed: not vectorized: unsupported use in stmt.
+src/bench.c:105:26: missed: couldn't vectorize loop
+src/bench.c:105:26: missed: not vectorized: control flow in loop.
+src/bench.c:102:5: note: vectorized 3 loops in function.
+src/bench.c:103:17: missed: statement clobbers memory: _2 = strcmp (_1, "--header");
+src/bench.c:105:38: missed: statement clobbers memory: _332 = strcmp (_1, "saxpy");
+src/bench.c:105:38: missed: statement clobbers memory: _250 = strcmp (_1, "mul");
+src/bench.c:105:38: missed: statement clobbers memory: _260 = strcmp (_1, "dot");
+src/bench.c:105:38: missed: statement clobbers memory: _268 = strcmp (_1, "stencil");
+src/bench.c:105:38: missed: statement clobbers memory: _987 = strcmp (_1, "stride");
+src/bench.c:105:38: missed: statement clobbers memory: _6 = strcmp (_1, "gather");
+src/bench.c:106:12: missed: statement clobbers memory: N_34 = strtoull (_8, 0B, 10);
+/usr/include/stdlib.h:483:16: missed: statement clobbers memory: _46 = strtol (_10, 0B, 10);
+src/bench.c:107:22: missed: statement clobbers memory: iftmp.2_36 = strtoull (_11, 0B, 10);
+src/bench.c:107:60: missed: statement clobbers memory: iftmp.3_38 = strtoull (_13, 0B, 10);
+src/bench.c:107:95: missed: statement clobbers memory: iftmp.4_40 = strtoull (_15, 0B, 10);
+src/bench.c:109:7: missed: statement clobbers memory: _19 = strcmp (_18, "f32");
+src/bench.c:110:7: missed: statement clobbers memory: _20 = strcmp (_18, "f64");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __builtin_fwrite ("bad dtype\n", 1, 10, stderr.6_21);
+src/bench.c:100:1: missed: statement clobbers memory: x1_421 = A (_420, iftmp.2_12);
+src/bench.c:100:1: missed: statement clobbers memory: y1_422 = A (_420, iftmp.3_9);
+src/bench.c:100:1: missed: statement clobbers memory: z1_423 = A (_420, 0);
+src/bench.c:100:1: missed: statement clobbers memory: x2_424 = A (_420, iftmp.2_12);
+src/bench.c:100:1: missed: statement clobbers memory: y2_425 = A (_420, iftmp.3_9);
+src/bench.c:100:1: missed: statement clobbers memory: z2_426 = A (_420, 0);
+src/bench.c:100:1: missed: statement clobbers memory: idx_429 = A (_428, 0);
+src/bench.c:100:1: missed: statement clobbers memory: d1_443 = run_f64 (k_22, x1_421, y1_422, z1_423, idx_429, n_416, iftmp.4_26);
+src/bench.c:100:1: missed: statement clobbers memory: ref_f64 (k_22, x2_424, y2_425, z2_426, idx_429, n_416, iftmp.4_26, &d2);
+src/bench.c:100:1: missed: statement clobbers memory: d1_473 = run_f64 (k_22, x1_421, y1_422, z1_423, idx_429, n_416, iftmp.4_26);
+src/bench.c:100:1: missed: statement clobbers memory: ref_f64 (k_22, x2_424, y2_425, z2_426, idx_429, n_416, iftmp.4_26, &d2);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (stderr.35_511, 2, "CHECK_OK %s %s n=%zu maxrel=%.3g\n", _510, "f64", n_416, mr_14);
+src/bench.c:100:1: missed: statement clobbers memory: x_295 = A (_294, iftmp.2_12);
+src/bench.c:100:1: missed: statement clobbers memory: y_296 = A (_294, iftmp.3_9);
+src/bench.c:100:1: missed: statement clobbers memory: z_297 = A (_294, 0);
+src/bench.c:100:1: missed: statement clobbers memory: idx_300 = A (_299, 0);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} 0.0;
+src/bench.c:100:1: missed: statement clobbers memory: r_351 = run_f64 (k_22, x_295, y_296, z_297, idx_300, N_34, iftmp.4_26);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.26_352 ={v} sink;
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} _353;
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:100:1: missed: statement clobbers memory: r_360 = run_f64 (k_22, x_295, y_296, z_297, idx_300, N_34, iftmp.4_26);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.27_361 ={v} sink;
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} _362;
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_381, "=d" hi_382);
+src/bench.c:51:1: missed: statement clobbers memory: k_saxpy_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_295, y_296, N_34);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.28_388 ={v} sink;
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} sink.28_388;
+src/bench.c:100:1: missed: statement clobbers memory: __asm__ __volatile__("" :  :  : "memory");
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_392, "=d" hi_393);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.29_404 ={v} sink;
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:86:10: missed: statement clobbers memory: __printf_chk (2, "%s,%s,%s,%zu,%zu,%zu,%zu,%d,%.6e,%.1f,%zu,%g\n", "native_fm_al", _412, "f64", N_34, iftmp.2_12, iftmp.3_9, iftmp.4_26, rep_670, _411, _409, _374, sink.29_404);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_1250, "=d" hi_1249);
+src/bench.c:51:1: missed: statement clobbers memory: k_stride_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_295, y_296, N_34, iftmp.4_26);
+src/bench.c:51:1: missed: statement clobbers memory: k_stencil_f64 (2.5e-1, 5.0e-1, 2.5e-1, x_295, y_296, N_34);
+src/bench.c:51:1: missed: statement clobbers memory: _1239 = k_dot_f64 (x_295, y_296, N_34);
+src/bench.c:51:1: missed: statement clobbers memory: k_mul_f64 (x_295, y_296, z_297, N_34);
+src/bench.c:51:1: missed: statement clobbers memory: k_gather_f64 (1.0000001000000000583867176828789524734020233154296875e+0, x_295, y_296, idx_300, N_34);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.28_1234 ={v} sink;
+src/bench.c:100:1: missed: not vectorized: volatile type: sink ={v} _1233;
+src/bench.c:100:1: missed: statement clobbers memory: __asm__ __volatile__("" :  :  : "memory");
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_1228, "=d" hi_1227);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:100:1: missed: not vectorized: volatile type: sink.29_1214 ={v} sink;
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:86:10: missed: statement clobbers memory: __printf_chk (2, "%s,%s,%s,%zu,%zu,%zu,%zu,%d,%.6e,%.1f,%zu,%g\n", "native_fm_al", _1207, "f64", N_34, iftmp.2_12, iftmp.3_9, iftmp.4_26, rep_1259, _1208, _1211, _374, sink.29_1214);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (pretmp_1351, 2, "CHECK FAIL %s %s maxrel=%g tol=%g\n", pretmp_1352, "f64", mr_507, iftmp.33_506);
+src/bench.c:99:1: missed: statement clobbers memory: x1_189 = A (_188, iftmp.2_12);
+src/bench.c:99:1: missed: statement clobbers memory: y1_190 = A (_188, iftmp.3_9);
+src/bench.c:99:1: missed: statement clobbers memory: z1_191 = A (_188, 0);
+src/bench.c:99:1: missed: statement clobbers memory: x2_192 = A (_188, iftmp.2_12);
+src/bench.c:99:1: missed: statement clobbers memory: y2_193 = A (_188, iftmp.3_9);
+src/bench.c:99:1: missed: statement clobbers memory: z2_194 = A (_188, 0);
+src/bench.c:99:1: missed: statement clobbers memory: idx_197 = A (_196, 0);
+src/bench.c:99:1: missed: statement clobbers memory: d1_527 = run_f32 (k_22, x1_189, y1_190, z1_191, idx_197, n_184, iftmp.4_26);
+src/bench.c:99:1: missed: statement clobbers memory: ref_f32 (k_22, x2_192, y2_193, z2_194, idx_197, n_184, iftmp.4_26, &d2);
+src/bench.c:99:1: missed: statement clobbers memory: d1_243 = run_f32 (k_22, x1_189, y1_190, z1_191, idx_197, n_184, iftmp.4_26);
+src/bench.c:99:1: missed: statement clobbers memory: ref_f32 (k_22, x2_192, y2_193, z2_194, idx_197, n_184, iftmp.4_26, &d2);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (stderr.17_286, 2, "CHECK_OK %s %s n=%zu maxrel=%.3g\n", _285, "f32", n_184, mr_512);
+src/bench.c:99:1: missed: statement clobbers memory: x_58 = A (_57, iftmp.2_12);
+src/bench.c:99:1: missed: statement clobbers memory: y_59 = A (_57, iftmp.3_9);
+src/bench.c:99:1: missed: statement clobbers memory: z_60 = A (_57, 0);
+src/bench.c:99:1: missed: statement clobbers memory: idx_63 = A (_62, 0);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} 0.0;
+src/bench.c:99:1: missed: statement clobbers memory: _116 = run_f32 (k_22, x_58, y_59, z_60, idx_63, N_34, iftmp.4_26);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.8_118 ={v} sink;
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} _119;
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:99:1: missed: statement clobbers memory: _126 = run_f32 (k_22, x_58, y_59, z_60, idx_63, N_34, iftmp.4_26);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.9_128 ={v} sink;
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} _129;
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_148, "=d" hi_149);
+src/bench.c:50:1: missed: statement clobbers memory: k_saxpy_f32 (1.00000011920928955078125e+0, x_58, y_59, N_34);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.10_156 ={v} sink;
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} sink.10_156;
+src/bench.c:99:1: missed: statement clobbers memory: __asm__ __volatile__("" :  :  : "memory");
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_160, "=d" hi_161);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.11_172 ={v} sink;
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:86:10: missed: statement clobbers memory: __printf_chk (2, "%s,%s,%s,%zu,%zu,%zu,%zu,%d,%.6e,%.1f,%zu,%g\n", "native_fm_al", _180, "f32", N_34, iftmp.2_12, iftmp.3_9, iftmp.4_26, rep_181, _179, _177, _141, sink.11_172);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_1306, "=d" hi_1305);
+src/bench.c:50:1: missed: statement clobbers memory: k_stride_f32 (1.00000011920928955078125e+0, x_58, y_59, N_34, iftmp.4_26);
+src/bench.c:50:1: missed: statement clobbers memory: k_stencil_f32 (2.5e-1, 5.0e-1, 2.5e-1, x_58, y_59, N_34);
+src/bench.c:50:1: missed: statement clobbers memory: _1295 = k_dot_f32 (x_58, y_59, N_34);
+src/bench.c:50:1: missed: statement clobbers memory: k_mul_f32 (x_58, y_59, z_60, N_34);
+src/bench.c:50:1: missed: statement clobbers memory: k_gather_f32 (1.00000011920928955078125e+0, x_58, y_59, idx_63, N_34);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.10_1289 ={v} sink;
+src/bench.c:99:1: missed: not vectorized: volatile type: sink ={v} _1288;
+src/bench.c:99:1: missed: statement clobbers memory: __asm__ __volatile__("" :  :  : "memory");
+src/bench.c:17:53: missed: statement clobbers memory: __asm__ __volatile__("rdtsc" : "=a" lo_1283, "=d" hi_1282);
+src/bench.c:16:45: missed: statement clobbers memory: clock_gettime (4, &t);
+src/bench.c:99:1: missed: not vectorized: volatile type: sink.11_1269 ={v} sink;
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:86:10: missed: statement clobbers memory: __printf_chk (2, "%s,%s,%s,%zu,%zu,%zu,%zu,%d,%.6e,%.1f,%zu,%g\n", "native_fm_al", _1262, "f32", N_34, iftmp.2_12, iftmp.3_9, iftmp.4_26, rep_1315, _1263, _1266, _141, sink.11_1269);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (pretmp_1349, 2, "CHECK FAIL %s %s maxrel=%g tol=%g\n", pretmp_1350, "f32", mr_282, iftmp.15_281);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __builtin_fwrite ("N>=3\n", 1, 5, stderr.5_16);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __builtin_fwrite ("bad kernel\n", 1, 11, stderr.1_7);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:10: missed: statement clobbers memory: __fprintf_chk (stderr.0_4, 2, "usage: %s kernel dtype N reps [offx offy stride]\n", _3);
+src/bench.c:103:46: missed: statement clobbers memory: puts ("variant,kernel,dtype,N,offx,offy,stride,rep,sec_per_call,tsc_per_call,iters,sink");
+src/bench.c:19:60: note: ***** Analysis failed with vector mode V4DI
+src/bench.c:19:60: note: ***** The result for vector mode V32QI would be the same
+src/bench.c:19:60: note: ***** Re-trying analysis with vector mode V16QI
+src/bench.c:19:60: note: ***** Analysis failed with vector mode V16QI
+src/bench.c:19:60: note: ***** Re-trying analysis with vector mode V8QI
+src/bench.c:19:60: note: ***** Analysis failed with vector mode V8QI
+src/bench.c:19:60: note: ***** Re-trying analysis with vector mode V4QI
+src/bench.c:19:60: note: ***** Analysis failed with vector mode V4QI

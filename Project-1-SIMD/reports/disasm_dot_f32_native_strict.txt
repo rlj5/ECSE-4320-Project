@@ -1,0 +1,40 @@
+0000000000003710 <k_dot_f32>:
+    3710:	endbr64
+    3714:	mov    %rdi,%rax
+    3717:	mov    %rsi,%rcx
+    371a:	test   %rdx,%rdx
+    371d:	je     3840 <k_dot_f32+0x130>
+    3723:	lea    -0x1(%rdx),%rsi
+    3727:	cmp    $0x6,%rsi
+    372b:	jbe    3854 <k_dot_f32+0x144>
+    3731:	mov    %rdx,%rdi
+    3734:	xor    %esi,%esi
+    3736:	vxorps %xmm0,%xmm0,%xmm0
+    373a:	shr    $0x3,%rdi
+    373e:	shl    $0x5,%rdi
+    3742:	data16 cs nopw 0x0(%rax,%rax,1)
+    374d:	nopl   (%rax)
+    3750:	vmovups (%rax,%rsi,1),%ymm4
+    3755:	vmulps (%rcx,%rsi,1),%ymm4,%ymm1
+    375a:	add    $0x20,%rsi
+    375e:	vshufps $0x55,%xmm1,%xmm1,%xmm3
+    3763:	vshufps $0xff,%xmm1,%xmm1,%xmm2
+    3768:	vaddss %xmm1,%xmm0,%xmm0
+    376c:	vaddss %xmm3,%xmm0,%xmm0
+    3770:	vunpckhps %xmm1,%xmm1,%xmm3
+    3774:	vextractf128 $0x1,%ymm1,%xmm1
+    377a:	vaddss %xmm3,%xmm0,%xmm0
+    377e:	vaddss %xmm2,%xmm0,%xmm0
+    3782:	vshufps $0x55,%xmm1,%xmm1,%xmm2
+    3787:	vaddss %xmm1,%xmm0,%xmm0
+    378b:	vaddss %xmm2,%xmm0,%xmm0
+    378f:	vunpckhps %xmm1,%xmm1,%xmm2
+    3793:	vshufps $0xff,%xmm1,%xmm1,%xmm1
+    3798:	vaddss %xmm2,%xmm0,%xmm0
+    379c:	vaddss %xmm1,%xmm0,%xmm0
+    37a0:	cmp    %rsi,%rdi
+    37a3:	jne    3750 <k_dot_f32+0x40>
+    37a5:	mov    %rdx,%rsi
+    37a8:	and    $0xfffffffffffffff8,%rsi
+    37ac:	test   $0x7,%dl
+    37af:	je     3850 <k_dot_f32+0x140>

@@ -1,0 +1,49 @@
+variant,kernel,dtype,gcc_verdict
+scalar,saxpy,f32,NOT vectorized
+scalar,mul,f32,NOT vectorized
+scalar,dot,f32,NOT vectorized
+scalar,stencil,f32,NOT vectorized
+scalar,stride,f32,NOT vectorized
+scalar,gather,f32,NOT vectorized
+scalar,saxpy,f64,NOT vectorized
+scalar,mul,f64,NOT vectorized
+scalar,dot,f64,NOT vectorized
+scalar,stencil,f64,NOT vectorized
+scalar,stride,f64,NOT vectorized
+scalar,gather,f64,NOT vectorized
+auto,saxpy,f32,vectorized (16 byte vectors)
+auto,mul,f32,vectorized (16 byte vectors)
+auto,dot,f32,vectorized (16 byte vectors)
+auto,stencil,f32,vectorized (16 byte vectors)
+auto,stride,f32,vectorized (16 byte vectors)
+auto,gather,f32,vectorized (16 byte vectors)
+auto,saxpy,f64,vectorized (16 byte vectors)
+auto,mul,f64,vectorized (16 byte vectors)
+auto,dot,f64,vectorized (16 byte vectors)
+auto,stencil,f64,vectorized (16 byte vectors)
+auto,stride,f64,vectorized (16 byte vectors)
+auto,gather,f64,vectorized (16 byte vectors)
+native,saxpy,f32,vectorized (32 byte vectors)
+native,mul,f32,vectorized (32 byte vectors)
+native,dot,f32,vectorized (32 byte vectors)
+native,stencil,f32,vectorized (32 byte vectors)
+native,stride,f32,vectorized (32 byte vectors)
+native,gather,f32,vectorized (32 byte vectors)
+native,saxpy,f64,vectorized (32 byte vectors)
+native,mul,f64,vectorized (32 byte vectors)
+native,dot,f64,vectorized (32 byte vectors)
+native,stencil,f64,vectorized (32 byte vectors)
+native,stride,f64,vectorized (32 byte vectors)
+native,gather,f64,vectorized (32 byte vectors)
+native_fm,saxpy,f32,vectorized (32 byte vectors)
+native_fm,mul,f32,vectorized (32 byte vectors)
+native_fm,dot,f32,vectorized (32 byte vectors)
+native_fm,stencil,f32,vectorized (32 byte vectors)
+native_fm,stride,f32,vectorized (32 byte vectors)
+native_fm,gather,f32,vectorized (32 byte vectors)
+native_fm,saxpy,f64,vectorized (32 byte vectors)
+native_fm,mul,f64,vectorized (32 byte vectors)
+native_fm,dot,f64,vectorized (32 byte vectors)
+native_fm,stencil,f64,vectorized (32 byte vectors)
+native_fm,stride,f64,vectorized (32 byte vectors)
+native_fm,gather,f64,vectorized (32 byte vectors)

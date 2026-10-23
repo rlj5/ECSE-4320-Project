@@ -1,0 +1,3 @@
+dtype,gflops,seconds
+f32,27.84,1.149
+f64,16.77,0.954

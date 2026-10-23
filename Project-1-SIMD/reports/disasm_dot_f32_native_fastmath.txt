@@ -1,0 +1,60 @@
+0000000000003a70 <k_dot_f32>:
+    3a70:	endbr64
+    3a74:	mov    %rsi,%rcx
+    3a77:	test   %rdx,%rdx
+    3a7a:	je     3b70 <k_dot_f32+0x100>
+    3a80:	lea    -0x1(%rdx),%rax
+    3a84:	cmp    $0x6,%rax
+    3a88:	jbe    3b84 <k_dot_f32+0x114>
+    3a8e:	mov    %rdx,%rsi
+    3a91:	xor    %eax,%eax
+    3a93:	vxorps %xmm1,%xmm1,%xmm1
+    3a97:	shr    $0x3,%rsi
+    3a9b:	shl    $0x5,%rsi
+    3a9f:	nop
+    3aa0:	vmovups (%rdi,%rax,1),%ymm4
+    3aa5:	vmulps (%rcx,%rax,1),%ymm4,%ymm0
+    3aaa:	add    $0x20,%rax
+    3aae:	vaddps %ymm0,%ymm1,%ymm1
+    3ab2:	cmp    %rax,%rsi
+    3ab5:	jne    3aa0 <k_dot_f32+0x30>
+    3ab7:	vextractf128 $0x1,%ymm1,%xmm3
+    3abd:	mov    %rdx,%rax
+    3ac0:	vaddps %xmm1,%xmm3,%xmm0
+    3ac4:	and    $0xfffffffffffffff8,%rax
+    3ac8:	vaddps %xmm3,%xmm1,%xmm1
+    3acc:	vmovhlps %xmm0,%xmm0,%xmm2
+    3ad0:	vaddps %xmm0,%xmm2,%xmm2
+    3ad4:	vshufps $0x55,%xmm2,%xmm2,%xmm0
+    3ad9:	vaddps %xmm2,%xmm0,%xmm0
+    3add:	test   $0x7,%dl
+    3ae0:	je     3b80 <k_dot_f32+0x110>
+    3ae6:	vzeroupper
+    3ae9:	mov    %rdx,%rsi
+    3aec:	sub    %rax,%rsi
+    3aef:	lea    -0x1(%rsi),%r8
+    3af3:	cmp    $0x2,%r8
+    3af7:	jbe    3b24 <k_dot_f32+0xb4>
+    3af9:	vmovups (%rdi,%rax,4),%xmm5
+    3afe:	mov    %rsi,%r8
+    3b01:	vfmadd231ps (%rcx,%rax,4),%xmm5,%xmm1
+    3b07:	and    $0xfffffffffffffffc,%r8
+    3b0b:	add    %r8,%rax
+    3b0e:	and    $0x3,%esi
+    3b11:	vmovhlps %xmm1,%xmm1,%xmm0
+    3b15:	vaddps %xmm1,%xmm0,%xmm1
+    3b19:	vshufps $0x55,%xmm1,%xmm1,%xmm0
+    3b1e:	vaddps %xmm1,%xmm0,%xmm0
+    3b22:	je     3b74 <k_dot_f32+0x104>
+    3b24:	vmovss (%rdi,%rax,4),%xmm6
+    3b29:	lea    0x1(%rax),%r8
+    3b2d:	lea    0x0(,%rax,4),%rsi
+    3b35:	vfmadd231ss (%rcx,%rax,4),%xmm6,%xmm0
+    3b3b:	cmp    %rdx,%r8
+    3b3e:	jae    3b74 <k_dot_f32+0x104>
+    3b40:	vmovss 0x4(%rcx,%rsi,1),%xmm7
+    3b46:	add    $0x2,%rax
+    3b4a:	vfmadd231ss 0x4(%rdi,%rsi,1),%xmm7,%xmm0
+    3b51:	cmp    %rdx,%rax
+    3b54:	jae    3b74 <k_dot_f32+0x104>
+    3b56:	vmovss 0x8(%rdi,%rsi,1),%xmm7
