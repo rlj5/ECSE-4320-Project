@@ -1,0 +1,11 @@
+== preflight 2026-11-03T18:35:08-05:00
+WSL2: YES  -> memory/TLB behaviour is nested-virtualized; hardware perf counters and cpufreq are usually unavailable. State this in the report.
+logical CPUs: 16   physical cores: 8   SMT active: 1
+MemAvailable: 6.8 GiB  (full run allocates about 2.5 GiB; below 3.5 GiB the driver halves its buffers)
+THP mode: always [madvise] never  (needs madvise or always for the huge-page runs; check thp_kb > 0 in data/raw/tlb.csv)
+perf hardware counters: WORK
+cpufreq governor: not exposed
+AC power online: 0 
+load average now: 0.30 0.41 0.19  (should be < 0.5; close browsers, Docker Desktop, etc.)
+physical-core CPU list used by the driver (first logical CPU of each core): 0,2,4,6,8,10,12,14,
+Windows side (do by hand, then write it in the report): power mode, Energy Saver on/off, RAM type/speed/channels (PowerShell: Get-CimInstance Win32_PhysicalMemory | ft Speed,ConfiguredClockSpeed,Manufacturer,Capacity)

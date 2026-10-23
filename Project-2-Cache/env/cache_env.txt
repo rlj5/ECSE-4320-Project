@@ -1,0 +1,100 @@
+### date
+2026-10-23T19:41:23-05:00
+### uname
+Linux DESKTOP-85019MH 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+### os-release
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+### lscpu
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        48 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               16
+On-line CPU(s) list:                  0-15
+Vendor ID:                            AuthenticAMD
+Model name:                           AMD Ryzen 7 5825U with Radeon Graphics
+CPU family:                           25
+Model:                                80
+Thread(s) per core:                   2
+Core(s) per socket:                   8
+Socket(s):                            1
+Stepping:                             0
+BogoMIPS:                             3992.39
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr arat umip vaes vpclmulqdq rdpid fsrm
+Hypervisor vendor:                    Microsoft
+Virtualization type:                  full
+L1d cache:                            256 KiB (8 instances)
+L1i cache:                            256 KiB (8 instances)
+L2 cache:                             4 MiB (8 instances)
+L3 cache:                             16 MiB (1 instance)
+NUMA node(s):                         1
+NUMA node0 CPU(s):                    0-15
+Vulnerability Gather data sampling:   Not affected
+Vulnerability Itlb multihit:          Not affected
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Not affected
+Vulnerability Reg file data sampling: Not affected
+Vulnerability Retbleed:               Not affected
+Vulnerability Spec rstack overflow:   Vulnerable: Safe RET, no microcode
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+### SMT active (1=on)
+1
+### governor cpu0 / available
+### freq min/max/cur (kHz) cpu0
+### boost (1=on)
+### power
+1
+### cpu topology (CPU,CORE,SOCKET)
+0,0,0 1,0,0 2,1,0 3,1,0 4,2,0 5,2,0 6,3,0 7,3,0 8,4,0 9,4,0 10,5,0 11,5,0 12,6,0 13,6,0 14,7,0 15,7,0 
+### memory
+               total        used        free      shared  buff/cache   available
+Mem:           7.4Gi       684Mi       6.5Gi       4.1Mi       435Mi       6.8Gi
+Swap:          2.0Gi          0B       2.0Gi
+(dmidecode needs sudo: run 'sudo dmidecode -t memory' manually)
+### THP
+always [madvise] never
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+FileHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+### compiler
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+### python
+Python 3.12.3
+pandas 2.1.4 matplotlib 3.6.3 numpy 1.26.4
+### perf
+WARNING: perf not found for kernel 6.6.87.2-microsoft
+### perf_event_paranoid
+2
+### fio
+./collect_env.sh: line 15: fio: command not found
+### block devices
+NAME MODEL          SIZE TYPE FSTYPE MOUNTPOINTS
+sda  Virtual Disk 388.4M disk ext4   
+sdb  Virtual Disk   186M disk ext4   
+sdc  Virtual Disk     2G disk swap   [SWAP]
+sdd  Virtual Disk     1T disk ext4   /var/lib/docker
+                                     /snap
+                                     /mnt/wslg/distro
+                                     /
+### nvme
+(nvme-cli not installed / needs sudo)
+### nvme link
+### nvme io scheduler / queue
+### nvme temp (hwmon)
+### smart (sudo)
+(run: sudo smartctl -a /dev/nvme0)

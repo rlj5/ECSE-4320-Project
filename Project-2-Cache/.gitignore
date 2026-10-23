@@ -1,0 +1,4 @@
+build/
+__pycache__/
+*.pyc
+# NOTE: data/raw, data/processed, plots, env MUST be committed (raw data is a deliverable)
