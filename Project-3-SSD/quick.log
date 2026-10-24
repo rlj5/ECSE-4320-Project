@@ -1,0 +1,141 @@
+wrote env/ssd_info.txt
+Windows target OK: C:\ssdtest\bench.fio-testfile  (unix view /mnt/c/ssdtest/bench.fio-testfile)
+NOTE: C: is normally the system drive: OS and background activity share the SSD and the result is not a quiet-device measurement. Say so in the report.
+fio: fio-3.43
+WARNING: only 7% of the volume is free; steady-state results depend on free space. Report it.
+prefill: sequential write of the whole test range
+  prep seqfill rep0: 1110 IOPS 1110 MiB/s lat 27794 us  T=60.0C
+precondition: random 4K write pass 1/1
+  prep randfill0 rep0: 61363 IOPS 240 MiB/s lat 349 us  T=63.0C
+== zero_queue
+  zero_queue rr4k rep0: 10301 IOPS 40 MiB/s lat 96 us  T=62.0C
+  zero_queue rw4k rep0: 20655 IOPS 81 MiB/s lat 47 us  T=62.0C
+  zero_queue sr128k rep0: 3228 IOPS 403 MiB/s lat 309 us  T=64.0C
+  zero_queue sw128k rep0: 1349 IOPS 169 MiB/s lat 731 us  T=66.0C
+wrote zero_queue 4
+== bs_sweep
+  bs_sweep rand-read-4k-qd1 rep0: 8815 IOPS 34 MiB/s lat 112 us  T=63.0C
+  bs_sweep rand-write-4k-qd1 rep0: 15578 IOPS 61 MiB/s lat 63 us  T=63.0C
+  bs_sweep rand-read-4k-qd32 rep0: 117708 IOPS 460 MiB/s lat 216 us  T=64.0C
+  bs_sweep rand-write-4k-qd32 rep0: 14549 IOPS 57 MiB/s lat 1978 us  T=63.0C
+  bs_sweep seq-read-4k-qd1 rep0: 12783 IOPS 50 MiB/s lat 77 us  T=61.0C
+  bs_sweep seq-write-4k-qd1 rep0: 20283 IOPS 79 MiB/s lat 48 us  T=61.0C
+  bs_sweep seq-read-4k-qd32 rep0: 112190 IOPS 438 MiB/s lat 215 us  T=62.0C
+  bs_sweep seq-write-4k-qd32 rep0: 39060 IOPS 153 MiB/s lat 647 us  T=62.0C
+  bs_sweep rand-read-16k-qd1 rep0: 6533 IOPS 102 MiB/s lat 152 us  T=60.0C
+  bs_sweep rand-write-16k-qd1 rep0: 20892 IOPS 326 MiB/s lat 46 us  T=60.0C
+  bs_sweep rand-read-16k-qd32 rep0: 93936 IOPS 1468 MiB/s lat 304 us  T=64.0C
+  bs_sweep rand-write-16k-qd32 rep0: 7464 IOPS 117 MiB/s lat 4290 us  T=63.0C
+  bs_sweep seq-read-16k-qd1 rep0: 9566 IOPS 149 MiB/s lat 103 us  T=61.0C
+  bs_sweep seq-write-16k-qd1 rep0: 16413 IOPS 256 MiB/s lat 59 us  T=62.0C
+  bs_sweep seq-read-16k-qd32 rep0: 104207 IOPS 1628 MiB/s lat 258 us  T=64.0C
+  bs_sweep seq-write-16k-qd32 rep0: 44167 IOPS 690 MiB/s lat 671 us  T=66.0C
+  bs_sweep rand-read-32k-qd1 rep0: 7134 IOPS 223 MiB/s lat 139 us  T=63.0C
+  bs_sweep rand-write-32k-qd1 rep0: 6766 IOPS 211 MiB/s lat 145 us  T=63.0C
+  bs_sweep rand-read-32k-qd32 rep0: 88001 IOPS 2750 MiB/s lat 330 us  T=68.0C
+  bs_sweep rand-write-32k-qd32 rep0: 7632 IOPS 239 MiB/s lat 4155 us  T=66.0C
+  bs_sweep seq-read-32k-qd1 rep0: 7058 IOPS 221 MiB/s lat 140 us  T=64.0C
+  bs_sweep seq-write-32k-qd1 rep0: 3954 IOPS 124 MiB/s lat 250 us  T=64.0C
+  bs_sweep seq-read-32k-qd32 rep0: 94170 IOPS 2943 MiB/s lat 297 us  T=68.0C
+  bs_sweep seq-write-32k-qd32 rep0: 6439 IOPS 201 MiB/s lat 4992 us  T=67.0C
+  bs_sweep rand-read-64k-qd1 rep0: 5805 IOPS 363 MiB/s lat 171 us  T=64.0C
+  bs_sweep rand-write-64k-qd1 rep0: 8455 IOPS 528 MiB/s lat 115 us  T=65.0C
+  bs_sweep rand-read-64k-qd32 rep0: 51241 IOPS 3203 MiB/s lat 615 us  T=70.0C
+  bs_sweep rand-write-64k-qd32 rep0: 4927 IOPS 308 MiB/s lat 6485 us  T=70.0C
+  bs_sweep seq-read-64k-qd1 rep0: 6252 IOPS 391 MiB/s lat 158 us  T=66.0C
+  bs_sweep seq-write-64k-qd1 rep0: 12946 IOPS 809 MiB/s lat 74 us  T=67.0C
+  bs_sweep seq-read-64k-qd32 rep0: 56433 IOPS 3527 MiB/s lat 557 us  T=71.0C
+  bs_sweep seq-write-64k-qd32 rep0: 11452 IOPS 716 MiB/s lat 2784 us  T=71.0C
+  bs_sweep rand-read-128k-qd1 rep0: 5425 IOPS 678 MiB/s lat 183 us  T=68.0C
+  bs_sweep rand-write-128k-qd1 rep0: 3868 IOPS 484 MiB/s lat 252 us  T=68.0C
+  bs_sweep rand-read-128k-qd32 rep0: 27830 IOPS 3479 MiB/s lat 1147 us  T=72.0C
+  bs_sweep rand-write-128k-qd32 rep0: 3391 IOPS 425 MiB/s lat 9418 us  T=72.0C
+  bs_sweep seq-read-128k-qd1 rep0: 5347 IOPS 668 MiB/s lat 185 us  T=69.0C
+  bs_sweep seq-write-128k-qd1 rep0: 2878 IOPS 360 MiB/s lat 341 us  T=70.0C
+  bs_sweep seq-read-128k-qd32 rep0: 28089 IOPS 3512 MiB/s lat 1136 us  T=73.0C
+  bs_sweep seq-write-128k-qd32 rep0: 7897 IOPS 988 MiB/s lat 4046 us  T=73.0C
+  bs_sweep rand-read-256k-qd1 rep0: 3522 IOPS 880 MiB/s lat 282 us  T=70.0C
+  bs_sweep rand-write-256k-qd1 rep0: 2285 IOPS 571 MiB/s lat 426 us  T=70.0C
+  bs_sweep rand-read-256k-qd32 rep0: 9183 IOPS 2297 MiB/s lat 3480 us  T=72.0C
+  bs_sweep rand-write-256k-qd32 rep0: 1918 IOPS 481 MiB/s lat 16627 us  T=72.0C
+  bs_sweep seq-read-256k-qd1 rep0: 4144 IOPS 1036 MiB/s lat 240 us  T=70.0C
+  bs_sweep seq-write-256k-qd1 rep0: 2066 IOPS 516 MiB/s lat 473 us  T=71.0C
+  bs_sweep seq-read-256k-qd32 rep0: 14201 IOPS 3552 MiB/s lat 2250 us  T=74.0C
+  bs_sweep seq-write-256k-qd32 rep0: 2875 IOPS 720 MiB/s lat 11101 us  T=74.0C
+  bs_sweep seq-read-1m-qd1 rep0: 2178 IOPS 2178 MiB/s lat 457 us  T=73.0C
+  bs_sweep seq-write-1m-qd1 rep0: 695 IOPS 695 MiB/s lat 1396 us  T=73.0C
+  bs_sweep seq-read-1m-qd32 rep0: 3545 IOPS 3551 MiB/s lat 9015 us  T=76.0C
+  bs_sweep seq-write-1m-qd32 rep0: 692 IOPS 698 MiB/s lat 45968 us  T=75.0C
+wrote bs_sweep 52
+== rw_mix
+  rw_mix rand4k-mix100 rep0: 120403 IOPS 470 MiB/s lat 209 us  T=73.0C
+  rw_mix rand4k-mix70 rep0: 90864 IOPS 355 MiB/s lat 283 us  T=71.0C
+  rw_mix rand4k-mix50 rep0: 82783 IOPS 323 MiB/s lat 313 us  T=70.0C
+  rw_mix rand4k-mix0 rep0: 46685 IOPS 182 MiB/s lat 471 us  T=68.0C
+wrote rw_mix 4
+== qd_sweep
+  qd_sweep rr4k-qd1 rep0: 7720 IOPS 30 MiB/s lat 128 us  T=66.0C
+  qd_sweep rw4k-qd1 rep0: 23534 IOPS 92 MiB/s lat 41 us  T=64.0C
+  qd_sweep sr128k-qd1 rep0: 2926 IOPS 366 MiB/s lat 340 us  T=64.0C
+  qd_sweep rr4k-qd2 rep0: 18253 IOPS 71 MiB/s lat 107 us  T=63.0C
+  qd_sweep rw4k-qd2 rep0: 41232 IOPS 161 MiB/s lat 43 us  T=63.0C
+  qd_sweep sr128k-qd2 rep0: 5494 IOPS 687 MiB/s lat 362 us  T=64.0C
+  qd_sweep rr4k-qd4 rep0: 35850 IOPS 140 MiB/s lat 108 us  T=63.0C
+  qd_sweep rw4k-qd4 rep0: 47622 IOPS 186 MiB/s lat 70 us  T=64.0C
+  qd_sweep sr128k-qd4 rep0: 7684 IOPS 961 MiB/s lat 518 us  T=66.0C
+  qd_sweep rr4k-qd8 rep0: 60338 IOPS 236 MiB/s lat 125 us  T=65.0C
+  qd_sweep rw4k-qd8 rep0: 46543 IOPS 182 MiB/s lat 127 us  T=65.0C
+  qd_sweep sr128k-qd8 rep0: 8807 IOPS 1101 MiB/s lat 906 us  T=68.0C
+  qd_sweep rr4k-qd16 rep0: 88380 IOPS 345 MiB/s lat 166 us  T=66.0C
+  qd_sweep rw4k-qd16 rep0: 20920 IOPS 82 MiB/s lat 658 us  T=65.0C
+  qd_sweep sr128k-qd16 rep0: 9143 IOPS 1143 MiB/s lat 1747 us  T=68.0C
+  qd_sweep rr4k-qd32 rep0: 118149 IOPS 462 MiB/s lat 221 us  T=67.0C
+  qd_sweep rw4k-qd32 rep0: 12614 IOPS 49 MiB/s lat 2317 us  T=65.0C
+  qd_sweep sr128k-qd32 rep0: 9134 IOPS 1143 MiB/s lat 3499 us  T=68.0C
+  qd_sweep rr4k-qd64 rep0: 114658 IOPS 448 MiB/s lat 418 us  T=67.0C
+  qd_sweep rw4k-qd64 rep0: 11241 IOPS 44 MiB/s lat 5363 us  T=66.0C
+  qd_sweep sr128k-qd64 rep0: 9089 IOPS 1138 MiB/s lat 7034 us  T=69.0C
+  qd_sweep rr4k-qd128 rep0: 96399 IOPS 377 MiB/s lat 774 us  T=68.0C
+  qd_sweep rw4k-qd128 rep0: 60680 IOPS 237 MiB/s lat 1088 us  T=67.0C
+  qd_sweep sr128k-qd128 rep0: 9549 IOPS 1197 MiB/s lat 13383 us  T=70.0C
+  qd_sweep rr4k-qd256 rep0: 112062 IOPS 438 MiB/s lat 1235 us  T=69.0C
+  qd_sweep rw4k-qd256 rep0: 51102 IOPS 200 MiB/s lat 3980 us  T=67.0C
+  qd_sweep sr128k-qd256 rep0: 9602 IOPS 1207 MiB/s lat 26586 us  T=70.0C
+  jobs_sweep rr4k-jobs1 rep0: 10489 IOPS 41 MiB/s lat 94 us  T=67.0C
+  jobs_sweep rr4k-jobs2 rep0: 20202 IOPS 79 MiB/s lat 98 us  T=65.0C
+  jobs_sweep rr4k-jobs4 rep0: 39143 IOPS 153 MiB/s lat 101 us  T=64.0C
+  jobs_sweep rr4k-jobs8 rep0: 67423 IOPS 263 MiB/s lat 117 us  T=64.0C
+  jobs_sweep rr4k-jobs16 rep0: 107341 IOPS 419 MiB/s lat 148 us  T=66.0C
+wrote qd_sweep 32
+== tail
+tail: mid QD=8, knee QD=32
+  tail rr4k-qd1 rep0: 10335 IOPS 40 MiB/s lat 96 us  T=64.0C
+  tail rw4k-qd1 rep0: 18428 IOPS 72 MiB/s lat 53 us  T=64.0C
+  tail rr4k-qd8 rep0: 53524 IOPS 209 MiB/s lat 132 us  T=65.0C
+  tail rw4k-qd8 rep0: 21185 IOPS 83 MiB/s lat 326 us  T=65.0C
+  tail rr4k-qd32 rep0: 128569 IOPS 502 MiB/s lat 200 us  T=68.0C
+  tail rw4k-qd32 rep0: 24403 IOPS 95 MiB/s lat 1125 us  T=68.0C
+wrote tail 6
+== state
+NOTE: for a 'fresh' state the freed space should be TRIMmed: Windows does this on file delete for SSDs; to force it run (Administrator PowerShell) Optimize-Volume -DriveLetter C -ReTrim -Verbose, then idle a few minutes.
+  state randwrite4k_fresh done
+  state seqwrite1m_slc done
+preconditioning state file (full sequential write + random 4K pass)
+  state randwrite4k_steady done
+== pitfalls
+  prep smallfill rep0: 89 IOPS 89 MiB/s lat 53967 us  T=71.0C
+  prep cachewarm rep0: 2241 IOPS 2241 MiB/s lat 445 us  T=71.0C
+  pitfall correct_direct_async_qd32 rep0: 123294 IOPS 482 MiB/s lat 206 us  T=71.0C
+  pitfall buffered_sync_1GiB rep0: 182996 IOPS 715 MiB/s lat 5 us  T=68.0C
+  pitfall direct_windowsaio_1GiB_same_file_control rep0: 10201 IOPS 40 MiB/s lat 97 us  T=66.0C
+  pitfall buffered_async_qd32_1GiB rep0: 114700 IOPS 448 MiB/s lat 182 us  T=66.0C
+  pitfall buffered_sync_iodepth32_ignored rep0: 9180 IOPS 36 MiB/s lat 107 us  T=64.0C
+  pitfall read_never_written_file rep0: 263275 IOPS 1028 MiB/s lat 64 us  T=63.0C
+wrote pitfalls 6
+done
+     test    dir     iops  bw_MiBs  mean_us  mean_us_std  p50_us  p50_us_std  p95_us  p95_us_std  p99_us  p99_us_std  p99.9_us  p99.9_us_std
+0    rr4k   read  10301.4     40.2     96.2          NaN    86.5         NaN   105.0         NaN   115.2         NaN     142.3           NaN
+1    rw4k  write  20655.1     80.7     47.2          NaN    25.5         NaN    35.6         NaN    46.8         NaN      79.4           NaN
+2  sr128k   read   3227.6    403.4    308.8          NaN   284.7         NaN   374.8         NaN   428.0         NaN     501.8           NaN
+3  sw128k  write   1349.4    168.7    731.3          NaN    90.6         NaN  1663.0         NaN  2056.2         NaN   27918.3           NaN
+plots -> /mnt/c/Users/r1519/Downloads/ECSE4320-Projects/Project-3-SSD/plots

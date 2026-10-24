@@ -1,0 +1,5 @@
+build/
+__pycache__/
+*.pyc
+*.fio-testfile*
+# NOTE: data/raw, data/processed, plots, env MUST be committed (raw data is a deliverable)

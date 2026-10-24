@@ -1,0 +1,120 @@
+### date: 2026-10-23T20:01:02-05:00   kernel: 6.6.87.2-microsoft-standard-WSL2
+### physical disks
+
+
+FriendlyName      : PC SN740 NVMe WD 512GB
+Model             : PC SN740 NVMe WD 512GB
+MediaType         : SSD
+BusType           : NVMe
+Size              : 512110190592
+HealthStatus      : Healthy
+OperationalStatus : OK
+FirmwareVersion   : 73914107
+
+
+
+
+### reliability counters (temperature, wear, power-on hours; may need admin)
+
+
+ObjectId                : {1}\\DESKTOP-85019MH\root/Microsoft/Windows/Storage/Providers_v2\SPACES_StorageReliabilityCou
+                          nter.ObjectId="{3ab12ca6-04a3-11ee-ba47-806e6f6e6963}:RC:{44937087-1e07-fe41-70f5-e4ff19d8ad3
+                          5}"
+PassThroughClass        : 
+PassThroughIds          : 
+PassThroughNamespace    : 
+PassThroughServer       : 
+UniqueId                : {3ab12ca6-04a3-11ee-ba47-806e6f6e6963}:RC:{44937087-1e07-fe41-70f5-e4ff19d8ad35}
+DeviceId                : 0
+FlushLatencyMax         : 1770
+LoadUnloadCycleCount    : 
+LoadUnloadCycleCountMax : 
+ManufactureDate         : 
+PowerOnHours            : 
+ReadErrorsCorrected     : 
+ReadErrorsTotal         : 
+ReadErrorsUncorrected   : 
+ReadLatencyMax          : 1777
+StartStopCycleCount     : 
+StartStopCycleCountMax  : 
+Temperature             : 44
+TemperatureMax          : 83
+Wear                    : 0
+WriteErrorsCorrected    : 
+WriteErrorsTotal        : 
+WriteErrorsUncorrected  : 
+WriteLatencyMax         : 3054
+PSComputerName          : 
+CimClass                : root/microsoft/windows/storage:MSFT_StorageReliabilityCounter
+CimInstanceProperties   : {ObjectId, PassThroughClass, PassThroughIds, PassThroughNamespace...}
+CimSystemProperties     : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+
+
+### volumes
+
+DriveLetter FileSystemLabel FileSystem         Size SizeRemaining
+----------- --------------- ----------         ---- -------------
+            WINRETOOLS      NTFS         1038086144     134516736
+            DELLSUPPORT     NTFS         1517285376     433262592
+            Image           NTFS        18307084288     147353600
+            ESP             FAT32         205520896      99768320
+C           OS              NTFS       490901336064   35071651840
+
+
+
+### active power plan
+Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+### TRIM (DisableDeleteNotify=0 means TRIM is ON)
+NTFS DisableDeleteNotify = 0  (Allows TRIM operations to be sent to the storage device)
+ReFS DisableDeleteNotify = 0  (Allows TRIM operations to be sent to the storage device)
+
+### BitLocker (needs admin)
+BitLocker Drive Encryption: Configuration Tool version 10.0.26100
+Copyright (C) 2013 Microsoft Corporation. All rights reserved.
+
+Volume C: [OS]
+[OS Volume]
+
+    Size:                 457.19 GB
+    BitLocker Version:    None
+    Conversion Status:    Fully Decrypted
+    Percentage Encrypted: 0.0%
+    Encryption Method:    None
+    Protection Status:    Protection Off
+    Lock Status:          Unlocked
+    Identification Field: None
+    Key Protectors:       None Found
+
+
+### Defender real-time monitoring / exclusions (may need admin)
+Get-MpPreference : Operation failed with the following error: 0x800106ba
+At line:1 char:1
++ Get-MpPreference | Format-List DisableRealtimeMonitoring,ExclusionPat ...
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (MSFT_MpPreference:root\Microsoft\...FT_MpPreference) [Get-MpPreference],  
+   CimException
+    + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpPreference
+ 
+
+### NVMe controllers
+
+FriendlyName                        Status
+------------                        ------
+Microsoft Storage Spaces Controller OK    
+Standard NVM Express Controller     OK    
+Xvdd SCSI Miniport                  OK    
+Microsoft VHD Loopback Controller   OK    
+
+
+
+### fio.exe: fio-3.43
+
+### TO RECORD BY HAND (cannot be read reliably from here)
+- PCIe link of the SSD (CrystalDiskInfo Transfer Mode): PCIe 3.0 x4 current | PCIe 4.0 x4 supported (operator-provided)
+- Windows Settings power mode: Balanced; Energy Saver off (operator-confirmed, matching the captured active `powercfg` scheme). AC power: connected (operator-confirmed).
+- Defender real-time protection: on (operator-confirmed; the environment script query failed with 0x800106ba).
+- Backup precaution: important files copied to a separate folder on the Desktop before testing (operator-confirmed; exact folder name not supplied).
+- Device Manager > Disk drives > the SSD > Policies: "Enable write caching on the device" and "Turn off Windows write-cache buffer flushing"
+- Free space on the volume and the size of the test files
